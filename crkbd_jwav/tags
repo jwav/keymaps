@@ -1,0 +1,1022 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AUDIO_ENABLE	rules.mk	/^AUDIO_ENABLE = no           # Audio output on port C6$/;"	m
+BACKLIGHT_ENABLE	rules.mk	/^BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality$/;"	m
+BLUETOOTH_ENABLE	rules.mk	/^BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID$/;"	m
+BOOTMAGIC_ENABLE	rules.mk	/^BOOTMAGIC_ENABLE = no       # Virtual DIP switch configuration$/;"	m
+CB_ACIRC_SYM_LEFT	my_combos.h	/^    CB_ACIRC_SYM_LEFT,$/;"	e	enum:combo_events
+CB_ACIRC_SYM_LEFT	my_combos_definitions.h	/^    CB_ACIRC_SYM_LEFT,$/;"	e	enum:combo_events
+CB_ACIRC_SYM_RIGHT	my_combos.h	/^    CB_ACIRC_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_ACIRC_SYM_RIGHT	my_combos_definitions.h	/^    CB_ACIRC_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_AGRV_BASE_RIGHT	my_combos.h	/^    CB_AGRV_BASE_RIGHT,$/;"	e	enum:combo_events
+CB_AGRV_BASE_RIGHT	my_combos_definitions.h	/^    CB_AGRV_BASE_RIGHT,$/;"	e	enum:combo_events
+CB_AGRV_SYM_LEFT	my_combos.h	/^    CB_AGRV_SYM_LEFT,$/;"	e	enum:combo_events
+CB_AGRV_SYM_LEFT	my_combos_definitions.h	/^    CB_AGRV_SYM_LEFT,$/;"	e	enum:combo_events
+CB_AGRV_SYM_RIGHT	my_combos.h	/^    CB_AGRV_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_AGRV_SYM_RIGHT	my_combos_definitions.h	/^    CB_AGRV_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_BSP_NUM_LEFT	my_combos.h	/^    CB_BSP_NUM_LEFT,$/;"	e	enum:combo_events
+CB_BSP_NUM_LEFT	my_combos_definitions.h	/^    CB_BSP_NUM_LEFT,$/;"	e	enum:combo_events
+CB_BSP_SYM_LEFT	my_combos.h	/^    CB_BSP_SYM_LEFT,$/;"	e	enum:combo_events
+CB_BSP_SYM_LEFT	my_combos_definitions.h	/^    CB_BSP_SYM_LEFT,$/;"	e	enum:combo_events
+CB_BSP_SYM_RIGHT	my_combos.h	/^    CB_BSP_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_CCED_BASE_RIGHT	my_combos.h	/^    CB_CCED_BASE_RIGHT,$/;"	e	enum:combo_events
+CB_CCED_BASE_RIGHT	my_combos_definitions.h	/^    CB_CCED_BASE_RIGHT,$/;"	e	enum:combo_events
+CB_CCED_SYM_LEFT	my_combos.h	/^    CB_CCED_SYM_LEFT,$/;"	e	enum:combo_events
+CB_CCED_SYM_LEFT	my_combos_definitions.h	/^    CB_CCED_SYM_LEFT,$/;"	e	enum:combo_events
+CB_CCED_SYM_RIGHT	my_combos.h	/^    CB_CCED_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_CCED_SYM_RIGHT	my_combos_definitions.h	/^    CB_CCED_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_DEADCIRC	my_combos_definitions.h	/^    CB_DEADCIRC,$/;"	e	enum:combo_events
+CB_DEADCIRC_BASE_RIGHT	my_combos.h	/^    CB_DEADCIRC_BASE_RIGHT,$/;"	e	enum:combo_events
+CB_DEL_NUM_LEFT	my_combos.h	/^    CB_DEL_NUM_LEFT,$/;"	e	enum:combo_events
+CB_EACU_BASE_RIGHT	my_combos.h	/^    CB_EACU_BASE_RIGHT,$/;"	e	enum:combo_events
+CB_EACU_BASE_RIGHT	my_combos_definitions.h	/^    CB_EACU_BASE_RIGHT,$/;"	e	enum:combo_events
+CB_EACU_SYM_LEFT	my_combos.h	/^    CB_EACU_SYM_LEFT,$/;"	e	enum:combo_events
+CB_EACU_SYM_LEFT	my_combos_definitions.h	/^    CB_EACU_SYM_LEFT,$/;"	e	enum:combo_events
+CB_EACU_SYM_RIGHT	my_combos.h	/^    CB_EACU_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_EACU_SYM_RIGHT	my_combos_definitions.h	/^    CB_EACU_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_ECIRC_SYM_LEFT	my_combos.h	/^    CB_ECIRC_SYM_LEFT,$/;"	e	enum:combo_events
+CB_ECIRC_SYM_LEFT	my_combos_definitions.h	/^    CB_ECIRC_SYM_LEFT,$/;"	e	enum:combo_events
+CB_ECIRC_SYM_RIGHT	my_combos.h	/^    CB_ECIRC_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_ECIRC_SYM_RIGHT	my_combos_definitions.h	/^    CB_ECIRC_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_EGRV_BASE_RIGHT	my_combos.h	/^    CB_EGRV_BASE_RIGHT,$/;"	e	enum:combo_events
+CB_EGRV_BASE_RIGHT	my_combos_definitions.h	/^    CB_EGRV_BASE_RIGHT,$/;"	e	enum:combo_events
+CB_EGRV_SYM_LEFT	my_combos.h	/^    CB_EGRV_SYM_LEFT,$/;"	e	enum:combo_events
+CB_EGRV_SYM_LEFT	my_combos_definitions.h	/^    CB_EGRV_SYM_LEFT,$/;"	e	enum:combo_events
+CB_EGRV_SYM_RIGHT	my_combos.h	/^    CB_EGRV_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_EGRV_SYM_RIGHT	my_combos_definitions.h	/^    CB_EGRV_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_ESC_BASE_BIS	my_combos.h	/^    CB_ESC_BASE_BIS,$/;"	e	enum:combo_events
+CB_ESC_BASE_LEFT	my_combos.h	/^    CB_ESC_BASE_LEFT,$/;"	e	enum:combo_events
+CB_ESC_NUM_LEFT	my_combos.h	/^    CB_ESC_NUM_LEFT,$/;"	e	enum:combo_events
+CB_ESC_NUM_LEFT	my_combos_definitions.h	/^    CB_ESC_NUM_LEFT,$/;"	e	enum:combo_events
+CB_ESC_SYM_LEFT	my_combos.h	/^    CB_ESC_SYM_LEFT,$/;"	e	enum:combo_events
+CB_ESC_SYM_LEFT	my_combos_definitions.h	/^    CB_ESC_SYM_LEFT,$/;"	e	enum:combo_events
+CB_ESC_SYM_RIGHT	my_combos.h	/^    CB_ESC_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_FOOBAR	my_combos.h	/^    CB_FOOBAR, \/\/ I don't know why, but adding this dummy combo at the end prevents the "combo characters repeat themselves when pressed only once" bug$/;"	e	enum:combo_events
+CB_ICIRC_SYM_LEFT	my_combos.h	/^    CB_ICIRC_SYM_LEFT,$/;"	e	enum:combo_events
+CB_ICIRC_SYM_LEFT	my_combos_definitions.h	/^    CB_ICIRC_SYM_LEFT,$/;"	e	enum:combo_events
+CB_ICIRC_SYM_RIGHT	my_combos.h	/^    CB_ICIRC_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_ICIRC_SYM_RIGHT	my_combos_definitions.h	/^    CB_ICIRC_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_OCIRC_SYM_LEFT	my_combos.h	/^    CB_OCIRC_SYM_LEFT,$/;"	e	enum:combo_events
+CB_OCIRC_SYM_LEFT	my_combos_definitions.h	/^    CB_OCIRC_SYM_LEFT,$/;"	e	enum:combo_events
+CB_OCIRC_SYM_RIGHT	my_combos.h	/^    CB_OCIRC_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_OCIRC_SYM_RIGHT	my_combos_definitions.h	/^    CB_OCIRC_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_UCIRC_SYM_LEFT	my_combos.h	/^    CB_UCIRC_SYM_LEFT,$/;"	e	enum:combo_events
+CB_UCIRC_SYM_LEFT	my_combos_definitions.h	/^    CB_UCIRC_SYM_LEFT,$/;"	e	enum:combo_events
+CB_UCIRC_SYM_RIGHT	my_combos.h	/^    CB_UCIRC_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_UCIRC_SYM_RIGHT	my_combos_definitions.h	/^    CB_UCIRC_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_UGRV_BASE_RIGHT	my_combos.h	/^    CB_UGRV_BASE_RIGHT,$/;"	e	enum:combo_events
+CB_UGRV_BASE_RIGHT	my_combos_definitions.h	/^    CB_UGRV_BASE_RIGHT,$/;"	e	enum:combo_events
+CB_UGRV_SYM_LEFT	my_combos.h	/^    CB_UGRV_SYM_LEFT,$/;"	e	enum:combo_events
+CB_UGRV_SYM_LEFT	my_combos_definitions.h	/^    CB_UGRV_SYM_LEFT,$/;"	e	enum:combo_events
+CB_UGRV_SYM_RIGHT	my_combos.h	/^    CB_UGRV_SYM_RIGHT,$/;"	e	enum:combo_events
+CB_UGRV_SYM_RIGHT	my_combos_definitions.h	/^    CB_UGRV_SYM_RIGHT,$/;"	e	enum:combo_events
+COMBO_COUNT	config.h	59;"	d
+COMBO_ENABLE	rules.mk	/^COMBO_ENABLE = yes $/;"	m
+COMBO_HOLD_TERM	config.h	65;"	d
+COMBO_MUST_HOLD_MODS	config.h	64;"	d
+COMBO_TERM	config.h	63;"	d
+COMMAND_ENABLE	rules.mk	/^COMMAND_ENABLE = no         # Commands for debug and configuration$/;"	m
+CONSOLE_ENABLE	rules.mk	/^CONSOLE_ENABLE = no         # Console for debug$/;"	m
+Combo	combos.py	/^class Combo:$/;"	c
+ComboList	combos.py	/^class ComboList(list):$/;"	c
+EXTRAKEY_ENABLE	rules.mk	/^EXTRAKEY_ENABLE = yes        # Audio control and System control$/;"	m
+FR_0	my_french_keycode_aliases.h	99;"	d
+FR_1	my_french_keycode_aliases.h	90;"	d
+FR_2	my_french_keycode_aliases.h	91;"	d
+FR_3	my_french_keycode_aliases.h	92;"	d
+FR_4	my_french_keycode_aliases.h	93;"	d
+FR_5	my_french_keycode_aliases.h	94;"	d
+FR_6	my_french_keycode_aliases.h	95;"	d
+FR_7	my_french_keycode_aliases.h	96;"	d
+FR_8	my_french_keycode_aliases.h	97;"	d
+FR_9	my_french_keycode_aliases.h	98;"	d
+FR_A	my_french_keycode_aliases.h	38;"	d
+FR_AGRV	my_french_keycode_aliases.h	34;"	d
+FR_AMP	my_french_keycode_aliases.h	144;"	d
+FR_AMPR	my_french_keycode_aliases.h	25;"	d
+FR_APOS	my_french_keycode_aliases.h	145;"	d
+FR_ASTR	my_french_keycode_aliases.h	62;"	d
+FR_AT	my_french_keycode_aliases.h	136;"	d
+FR_B	my_french_keycode_aliases.h	69;"	d
+FR_BSLS	my_french_keycode_aliases.h	135;"	d
+FR_BULT	my_french_keycode_aliases.h	152;"	d
+FR_C	my_french_keycode_aliases.h	67;"	d
+FR_CCED	my_french_keycode_aliases.h	33;"	d
+FR_CCIRC	my_french_keycode_aliases.h	151;"	d
+FR_CIRC	my_french_keycode_aliases.h	48;"	d
+FR_COLN	my_french_keycode_aliases.h	73;"	d
+FR_COMM	my_french_keycode_aliases.h	71;"	d
+FR_CURR	my_french_keycode_aliases.h	141;"	d
+FR_D	my_french_keycode_aliases.h	53;"	d
+FR_DEG	my_french_keycode_aliases.h	100;"	d
+FR_DIAE	my_french_keycode_aliases.h	103;"	d
+FR_DLR	my_french_keycode_aliases.h	49;"	d
+FR_DOT	my_french_keycode_aliases.h	111;"	d
+FR_DQUO	my_french_keycode_aliases.h	27;"	d
+FR_E	my_french_keycode_aliases.h	40;"	d
+FR_EACU	my_french_keycode_aliases.h	26;"	d
+FR_EGRV	my_french_keycode_aliases.h	31;"	d
+FR_EQL	my_french_keycode_aliases.h	36;"	d
+FR_EURO	my_french_keycode_aliases.h	140;"	d
+FR_EXLM	my_french_keycode_aliases.h	74;"	d
+FR_F	my_french_keycode_aliases.h	54;"	d
+FR_G	my_french_keycode_aliases.h	55;"	d
+FR_GRTR	my_french_keycode_aliases.h	150;"	d
+FR_GRV	my_french_keycode_aliases.h	134;"	d
+FR_H	my_french_keycode_aliases.h	56;"	d
+FR_HASH	my_french_keycode_aliases.h	130;"	d
+FR_I	my_french_keycode_aliases.h	45;"	d
+FR_J	my_french_keycode_aliases.h	57;"	d
+FR_K	my_french_keycode_aliases.h	58;"	d
+FR_L	my_french_keycode_aliases.h	59;"	d
+FR_LABK	my_french_keycode_aliases.h	64;"	d
+FR_LBRC	my_french_keycode_aliases.h	132;"	d
+FR_LCBR	my_french_keycode_aliases.h	131;"	d
+FR_LESS	my_french_keycode_aliases.h	146;"	d
+FR_LPRN	my_french_keycode_aliases.h	29;"	d
+FR_M	my_french_keycode_aliases.h	60;"	d
+FR_MICR	my_french_keycode_aliases.h	107;"	d
+FR_MINS	my_french_keycode_aliases.h	30;"	d
+FR_MU	my_french_keycode_aliases.h	149;"	d
+FR_N	my_french_keycode_aliases.h	70;"	d
+FR_O	my_french_keycode_aliases.h	46;"	d
+FR_OVRR	my_french_keycode_aliases.h	147;"	d
+FR_P	my_french_keycode_aliases.h	47;"	d
+FR_PERC	my_french_keycode_aliases.h	106;"	d
+FR_PIPE	my_french_keycode_aliases.h	133;"	d
+FR_PLUS	my_french_keycode_aliases.h	101;"	d
+FR_PND	my_french_keycode_aliases.h	104;"	d
+FR_Q	my_french_keycode_aliases.h	51;"	d
+FR_QUES	my_french_keycode_aliases.h	110;"	d
+FR_QUOT	my_french_keycode_aliases.h	28;"	d
+FR_R	my_french_keycode_aliases.h	41;"	d
+FR_RABK	my_french_keycode_aliases.h	109;"	d
+FR_RBRC	my_french_keycode_aliases.h	137;"	d
+FR_RCBR	my_french_keycode_aliases.h	138;"	d
+FR_RPRN	my_french_keycode_aliases.h	35;"	d
+FR_S	my_french_keycode_aliases.h	52;"	d
+FR_SCLN	my_french_keycode_aliases.h	72;"	d
+FR_SECT	my_french_keycode_aliases.h	113;"	d
+FR_SLSH	my_french_keycode_aliases.h	112;"	d
+FR_SUP2	my_french_keycode_aliases.h	24;"	d
+FR_T	my_french_keycode_aliases.h	42;"	d
+FR_TILD	my_french_keycode_aliases.h	129;"	d
+FR_U	my_french_keycode_aliases.h	44;"	d
+FR_UGRV	my_french_keycode_aliases.h	61;"	d
+FR_UMLT	my_french_keycode_aliases.h	148;"	d
+FR_UNDS	my_french_keycode_aliases.h	32;"	d
+FR_V	my_french_keycode_aliases.h	68;"	d
+FR_W	my_french_keycode_aliases.h	65;"	d
+FR_X	my_french_keycode_aliases.h	66;"	d
+FR_Y	my_french_keycode_aliases.h	43;"	d
+FR_Z	my_french_keycode_aliases.h	39;"	d
+HOME_A	my_homerow_mods.h	5;"	d
+HOME_D	my_homerow_mods.h	7;"	d
+HOME_F	my_homerow_mods.h	8;"	d
+HOME_J	my_homerow_mods.h	13;"	d
+HOME_K	my_homerow_mods.h	12;"	d
+HOME_L	my_homerow_mods.h	11;"	d
+HOME_M	my_homerow_mods.h	10;"	d
+HOME_NUM_0	my_homerow_mods.h	15;"	d
+HOME_NUM_1	my_homerow_mods.h	16;"	d
+HOME_NUM_2	my_homerow_mods.h	17;"	d
+HOME_NUM_3	my_homerow_mods.h	18;"	d
+HOME_S	my_homerow_mods.h	6;"	d
+IGNORE_MOD_TAP_INTERRUPT	config.h	37;"	d
+KC_ACIRC	my_custom_keycodes.h	/^    KC_ACIRC,$/;"	e	enum:custom_keycodes
+KC_ECIRC	my_custom_keycodes.h	/^    KC_ECIRC,$/;"	e	enum:custom_keycodes
+KC_ICIRC	my_custom_keycodes.h	/^    KC_ICIRC,$/;"	e	enum:custom_keycodes
+KC_OCIRC	my_custom_keycodes.h	/^    KC_OCIRC,$/;"	e	enum:custom_keycodes
+KC_UCIRC	my_custom_keycodes.h	/^    KC_UCIRC,$/;"	e	enum:custom_keycodes
+LAYER_NUM	my_custom_keycodes.h	7;"	d
+LAYER_SYM	my_custom_keycodes.h	8;"	d
+MASTER_RIGHT	config.h	28;"	d
+MC_DELEND	my_custom_keycodes.h	/^    MC_DELEND$/;"	e	enum:custom_keycodes
+MC_DELHOME	my_custom_keycodes.h	/^    MC_DELHOME,$/;"	e	enum:custom_keycodes
+MC_DELLINE	my_custom_keycodes.h	/^    MC_DELLINE,$/;"	e	enum:custom_keycodes
+MIDI_ENABLE	rules.mk	/^MIDI_ENABLE = no            # MIDI controls$/;"	m
+MOUSEKEY_ENABLE	rules.mk	/^MOUSEKEY_ENABLE = yes        # Mouse keys$/;"	m
+MY_FRENCH_KEYCODE_ALIASES	my_french_keycode_aliases.h	2;"	d
+MY_NB_COMBOS	my_combos.h	/^    MY_NB_COMBOS \/\/ will contain the number of elements in this enum$/;"	e	enum:combo_events
+MY_NB_COMBOS	my_combos_definitions.h	/^    MY_NB_COMBOS \/\/ will contain the number of elements in this enum$/;"	e	enum:combo_events
+MyLayers	my_manual_keymap.h	/^enum MyLayers{$/;"	g
+NBCOLS	keypos.py	/^NBCOLS = 12$/;"	v
+NBROWS	keypos.py	/^NBROWS = 3$/;"	v
+NKRO_ENABLE	rules.mk	/^NKRO_ENABLE = no            # Nkey Rollover - if this doesn't work, see here: https:\/\/github.com\/tmk\/tmk_keyboard\/wiki\/FAQ#nkro-doesnt-work$/;"	m
+OLED_DRIVER_ENABLE	rules.mk	/^OLED_DRIVER_ENABLE= no     # OLED display$/;"	m
+QMKBEST	my_custom_keycodes.h	/^    QMKBEST = SAFE_RANGE,$/;"	e	enum:custom_keycodes
+RGBLIGHT_ENABLE	rules.mk	/^RGBLIGHT_ENABLE = no       # Enable WS2812 RGB underlight. $/;"	m
+SWAP_HANDS_ENABLE	rules.mk	/^SWAP_HANDS_ENABLE = no      # Enable one-hand typing$/;"	m
+TAPPING_FORCE_HOLD_PER_KEY	config.h	45;"	d
+TAPPING_TERM	config.h	39;"	d
+TAPPING_TERM_HOMEROWMODS	config.h	40;"	d
+TAPPING_TERM_PER_KEY	config.h	42;"	d
+UNICODE_ENABLE	rules.mk	/^UNICODE_ENABLE = yes         # Unicode$/;"	m
+USE_SERIAL_PD2	config.h	31;"	d
+VERBOSE	keypos.py	/^VERBOSE = True$/;"	v
+X_DEADCIRC	my_custom_keycodes.h	22;"	d
+_LAYER_BASE	my_manual_keymap.h	/^_LAYER_BASE = 0,$/;"	e	enum:MyLayers
+_LAYER_BASE_LEFT	my_manual_keymap.h	17;"	d
+_LAYER_COLEMAK	my_manual_keymap.h	/^_LAYER_COLEMAK,$/;"	e	enum:MyLayers
+_LAYER_CUSTOM_LAYOUT	my_manual_keymap.h	/^_LAYER_CUSTOM_LAYOUT,$/;"	e	enum:MyLayers
+_LAYER_FUNC	my_manual_keymap.h	/^_LAYER_FUNC,$/;"	e	enum:MyLayers
+_LAYER_MOUSE	my_manual_keymap.h	/^_LAYER_MOUSE,$/;"	e	enum:MyLayers
+_LAYER_NUM	my_manual_keymap.h	/^_LAYER_NUM ,$/;"	e	enum:MyLayers
+_LAYER_REVERSE_BASE	my_manual_keymap.h	/^_LAYER_REVERSE_BASE,$/;"	e	enum:MyLayers
+_LAYER_REVERSE_NUM	my_manual_keymap.h	/^_LAYER_REVERSE_NUM,$/;"	e	enum:MyLayers
+_LAYER_SYM	my_manual_keymap.h	/^_LAYER_SYM ,$/;"	e	enum:MyLayers
+__init__	combos.py	/^    def __init__(self, name:str, action:str, keys:str):$/;"	m	class:Combo
+cblist	combos.py	/^    cblist = ComboList()$/;"	v
+combo_acirc_sym_left	my_combos.h	/^const uint16_t PROGMEM combo_acirc_sym_left[] = {k112, k114, COMBO_END};$/;"	v
+combo_acirc_sym_right	my_combos.h	/^const uint16_t PROGMEM combo_acirc_sym_right[] = {km112, km114, COMBO_END};$/;"	v
+combo_agrv_base_right	my_combos.h	/^const uint16_t PROGMEM combo_agrv_base_right[] = {km024, km022, COMBO_END};$/;"	v
+combo_bsp_num_left	my_combos.h	/^const uint16_t PROGMEM combo_bsp_num_left[] = {k203, k204, COMBO_END};$/;"	v
+combo_bsp_sym_left	my_combos.h	/^const uint16_t PROGMEM combo_bsp_sym_left[] = {k102, k103, COMBO_END};$/;"	v
+combo_bsp_sym_right	my_combos.h	/^const uint16_t PROGMEM combo_bsp_sym_right[] = {km102, km103, COMBO_END};$/;"	v
+combo_cced_base_right	my_combos.h	/^const uint16_t PROGMEM combo_cced_base_right[] = {km025, km024, COMBO_END};$/;"	v
+combo_cced_sym_left	my_combos.h	/^const uint16_t PROGMEM combo_cced_sym_left[] = {k122, k123, COMBO_END};$/;"	v
+combo_deadcirc_base_right	my_combos.h	/^const uint16_t PROGMEM combo_deadcirc_base_right[] = {km004, km002, COMBO_END};$/;"	v
+combo_del_num_left	my_combos.h	/^const uint16_t PROGMEM combo_del_num_left[] = {k204, k203, COMBO_END};$/;"	v
+combo_eacu_base_right	my_combos.h	/^const uint16_t PROGMEM combo_eacu_base_right[] = {km023, km024, COMBO_END};$/;"	v
+combo_ecirc_sym_left	my_combos.h	/^const uint16_t PROGMEM combo_ecirc_sym_left[] = {k113, k114, COMBO_END};$/;"	v
+combo_ecirc_sym_right	my_combos.h	/^const uint16_t PROGMEM combo_ecirc_sym_right[] = {km113, km114, COMBO_END};$/;"	v
+combo_egrv_base_right	my_combos.h	/^const uint16_t PROGMEM combo_egrv_base_right[] = {km022, km023, COMBO_END};$/;"	v
+combo_esc_base_bis	my_combos.h	/^const uint16_t PROGMEM combo_esc_base_bis[] = {k022, k023, COMBO_END}; \/\/ alternate base layer esc$/;"	v
+combo_esc_base_left	my_combos.h	/^const uint16_t PROGMEM combo_esc_base_left[] = {k002, k004, COMBO_END}; \/\/ upper row esc$/;"	v
+combo_esc_num_left	my_combos.h	/^const uint16_t PROGMEM combo_esc_num_left[] = {k202, k204, COMBO_END};$/;"	v
+combo_esc_sym_left	my_combos.h	/^const uint16_t PROGMEM combo_esc_sym_left[] = {k102, k104, COMBO_END};$/;"	v
+combo_esc_sym_right	my_combos.h	/^const uint16_t PROGMEM combo_esc_sym_right[] = {km102, km104, COMBO_END};$/;"	v
+combo_events	my_combos.h	/^enum combo_events {$/;"	g
+combo_events	my_combos_definitions.h	/^enum combo_events {$/;"	g
+combo_foobar	my_combos.h	/^const uint16_t PROGMEM combo_foobar[] = {KC_F23, KC_F24, COMBO_END};$/;"	v
+combo_icirc_sym_left	my_combos.h	/^const uint16_t PROGMEM combo_icirc_sym_left[] = {k114, k115, COMBO_END};$/;"	v
+combo_icirc_sym_right	my_combos.h	/^const uint16_t PROGMEM combo_icirc_sym_right[] = {km114, km115, COMBO_END};$/;"	v
+combo_ocirc_sym_left	my_combos.h	/^const uint16_t PROGMEM combo_ocirc_sym_left[] = {k112, k113, COMBO_END};$/;"	v
+combo_ocirc_sym_right	my_combos.h	/^const uint16_t PROGMEM combo_ocirc_sym_right[] = {km112, km113, COMBO_END};$/;"	v
+combo_ucirc_sym_left	my_combos.h	/^const uint16_t PROGMEM combo_ucirc_sym_left[] = {k114, k111, COMBO_END};$/;"	v
+combo_ucirc_sym_right	my_combos.h	/^const uint16_t PROGMEM combo_ucirc_sym_right[] = {km114, km111, COMBO_END};$/;"	v
+combo_ugrv_base_right	my_combos.h	/^const uint16_t PROGMEM combo_ugrv_base_right[] = {km022, km021, COMBO_END};$/;"	v
+combo_ugrv_sym_left	my_combos.h	/^const uint16_t PROGMEM combo_ugrv_sym_left[] = {k123, k124, COMBO_END};$/;"	v
+combos_definitions_file_str	combos.py	/^    def combos_definitions_file_str(self) -> str:$/;"	m	class:ComboList
+combos_file_str	combos.py	/^    def combos_file_str(self) -> str:$/;"	m	class:ComboList
+custom_keycodes	my_custom_keycodes.h	/^enum custom_keycodes {$/;"	g
+f0	my_french_keycode_aliases.h	257;"	d
+f1	my_french_keycode_aliases.h	248;"	d
+f2	my_french_keycode_aliases.h	249;"	d
+f3	my_french_keycode_aliases.h	250;"	d
+f4	my_french_keycode_aliases.h	251;"	d
+f5	my_french_keycode_aliases.h	252;"	d
+f6	my_french_keycode_aliases.h	253;"	d
+f7	my_french_keycode_aliases.h	254;"	d
+f8	my_french_keycode_aliases.h	255;"	d
+f9	my_french_keycode_aliases.h	256;"	d
+fA	my_french_keycode_aliases.h	196;"	d
+fAGRV	my_french_keycode_aliases.h	192;"	d
+fAMP	my_french_keycode_aliases.h	302;"	d
+fAMPR	my_french_keycode_aliases.h	183;"	d
+fAPOS	my_french_keycode_aliases.h	303;"	d
+fASTR	my_french_keycode_aliases.h	220;"	d
+fAT	my_french_keycode_aliases.h	294;"	d
+fB	my_french_keycode_aliases.h	227;"	d
+fBSLS	my_french_keycode_aliases.h	293;"	d
+fBULT	my_french_keycode_aliases.h	310;"	d
+fC	my_french_keycode_aliases.h	225;"	d
+fCCED	my_french_keycode_aliases.h	191;"	d
+fCCIRC	my_french_keycode_aliases.h	309;"	d
+fCIRC	my_french_keycode_aliases.h	206;"	d
+fCOLN	my_french_keycode_aliases.h	231;"	d
+fCOMM	my_french_keycode_aliases.h	229;"	d
+fCURR	my_french_keycode_aliases.h	299;"	d
+fD	my_french_keycode_aliases.h	211;"	d
+fDEG	my_french_keycode_aliases.h	258;"	d
+fDIAE	my_french_keycode_aliases.h	261;"	d
+fDLR	my_french_keycode_aliases.h	207;"	d
+fDOT	my_french_keycode_aliases.h	269;"	d
+fDQUO	my_french_keycode_aliases.h	185;"	d
+fE	my_french_keycode_aliases.h	198;"	d
+fEACU	my_french_keycode_aliases.h	184;"	d
+fEGRV	my_french_keycode_aliases.h	189;"	d
+fEQL	my_french_keycode_aliases.h	194;"	d
+fEURO	my_french_keycode_aliases.h	298;"	d
+fEXLM	my_french_keycode_aliases.h	232;"	d
+fF	my_french_keycode_aliases.h	212;"	d
+fG	my_french_keycode_aliases.h	213;"	d
+fGRTR	my_french_keycode_aliases.h	308;"	d
+fGRV	my_french_keycode_aliases.h	292;"	d
+fH	my_french_keycode_aliases.h	214;"	d
+fHASH	my_french_keycode_aliases.h	288;"	d
+fI	my_french_keycode_aliases.h	203;"	d
+fJ	my_french_keycode_aliases.h	215;"	d
+fK	my_french_keycode_aliases.h	216;"	d
+fL	my_french_keycode_aliases.h	217;"	d
+fLABK	my_french_keycode_aliases.h	222;"	d
+fLBRC	my_french_keycode_aliases.h	290;"	d
+fLCBR	my_french_keycode_aliases.h	289;"	d
+fLESS	my_french_keycode_aliases.h	304;"	d
+fLPRN	my_french_keycode_aliases.h	187;"	d
+fM	my_french_keycode_aliases.h	218;"	d
+fMICR	my_french_keycode_aliases.h	265;"	d
+fMINS	my_french_keycode_aliases.h	188;"	d
+fMU	my_french_keycode_aliases.h	307;"	d
+fN	my_french_keycode_aliases.h	228;"	d
+fO	my_french_keycode_aliases.h	204;"	d
+fOVRR	my_french_keycode_aliases.h	305;"	d
+fP	my_french_keycode_aliases.h	205;"	d
+fPERC	my_french_keycode_aliases.h	264;"	d
+fPIPE	my_french_keycode_aliases.h	291;"	d
+fPLUS	my_french_keycode_aliases.h	259;"	d
+fPND	my_french_keycode_aliases.h	262;"	d
+fQ	my_french_keycode_aliases.h	209;"	d
+fQUES	my_french_keycode_aliases.h	268;"	d
+fQUOT	my_french_keycode_aliases.h	186;"	d
+fR	my_french_keycode_aliases.h	199;"	d
+fRABK	my_french_keycode_aliases.h	267;"	d
+fRBRC	my_french_keycode_aliases.h	295;"	d
+fRCBR	my_french_keycode_aliases.h	296;"	d
+fRPRN	my_french_keycode_aliases.h	193;"	d
+fS	my_french_keycode_aliases.h	210;"	d
+fSCLN	my_french_keycode_aliases.h	230;"	d
+fSECT	my_french_keycode_aliases.h	271;"	d
+fSLSH	my_french_keycode_aliases.h	270;"	d
+fSUP2	my_french_keycode_aliases.h	182;"	d
+fT	my_french_keycode_aliases.h	200;"	d
+fTILD	my_french_keycode_aliases.h	287;"	d
+fU	my_french_keycode_aliases.h	202;"	d
+fUGRV	my_french_keycode_aliases.h	219;"	d
+fUMLT	my_french_keycode_aliases.h	306;"	d
+fUNDS	my_french_keycode_aliases.h	190;"	d
+fV	my_french_keycode_aliases.h	226;"	d
+fW	my_french_keycode_aliases.h	223;"	d
+fX	my_french_keycode_aliases.h	224;"	d
+fY	my_french_keycode_aliases.h	201;"	d
+fZ	my_french_keycode_aliases.h	197;"	d
+generate_defines	keypos.py	/^def generate_defines():$/;"	f
+get_tapping_force_hold	my_custom_keycodes.h	/^bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {$/;"	f
+get_tapping_term	my_custom_keycodes.h	/^uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record) $/;"	f
+k000	my_keypos_aliases.h	2;"	d
+k001	my_keypos_aliases.h	4;"	d
+k002	my_keypos_aliases.h	6;"	d
+k003	my_keypos_aliases.h	8;"	d
+k004	my_keypos_aliases.h	10;"	d
+k005	my_keypos_aliases.h	12;"	d
+k006	my_keypos_aliases.h	14;"	d
+k007	my_keypos_aliases.h	16;"	d
+k008	my_keypos_aliases.h	18;"	d
+k009	my_keypos_aliases.h	20;"	d
+k00a	my_keypos_aliases.h	22;"	d
+k00b	my_keypos_aliases.h	24;"	d
+k010	my_keypos_aliases.h	26;"	d
+k011	my_keypos_aliases.h	28;"	d
+k012	my_keypos_aliases.h	30;"	d
+k013	my_keypos_aliases.h	32;"	d
+k014	my_keypos_aliases.h	34;"	d
+k015	my_keypos_aliases.h	36;"	d
+k016	my_keypos_aliases.h	38;"	d
+k017	my_keypos_aliases.h	40;"	d
+k018	my_keypos_aliases.h	42;"	d
+k019	my_keypos_aliases.h	44;"	d
+k01a	my_keypos_aliases.h	46;"	d
+k01b	my_keypos_aliases.h	48;"	d
+k020	my_keypos_aliases.h	50;"	d
+k021	my_keypos_aliases.h	52;"	d
+k022	my_keypos_aliases.h	54;"	d
+k023	my_keypos_aliases.h	56;"	d
+k024	my_keypos_aliases.h	58;"	d
+k025	my_keypos_aliases.h	60;"	d
+k026	my_keypos_aliases.h	62;"	d
+k027	my_keypos_aliases.h	64;"	d
+k028	my_keypos_aliases.h	66;"	d
+k029	my_keypos_aliases.h	68;"	d
+k02a	my_keypos_aliases.h	70;"	d
+k02b	my_keypos_aliases.h	72;"	d
+k100	my_keypos_aliases.h	74;"	d
+k101	my_keypos_aliases.h	76;"	d
+k102	my_keypos_aliases.h	78;"	d
+k103	my_keypos_aliases.h	80;"	d
+k104	my_keypos_aliases.h	82;"	d
+k105	my_keypos_aliases.h	84;"	d
+k106	my_keypos_aliases.h	86;"	d
+k107	my_keypos_aliases.h	88;"	d
+k108	my_keypos_aliases.h	90;"	d
+k109	my_keypos_aliases.h	92;"	d
+k10a	my_keypos_aliases.h	94;"	d
+k10b	my_keypos_aliases.h	96;"	d
+k110	my_keypos_aliases.h	98;"	d
+k111	my_keypos_aliases.h	100;"	d
+k112	my_keypos_aliases.h	102;"	d
+k113	my_keypos_aliases.h	104;"	d
+k114	my_keypos_aliases.h	106;"	d
+k115	my_keypos_aliases.h	108;"	d
+k116	my_keypos_aliases.h	110;"	d
+k117	my_keypos_aliases.h	112;"	d
+k118	my_keypos_aliases.h	114;"	d
+k119	my_keypos_aliases.h	116;"	d
+k11a	my_keypos_aliases.h	118;"	d
+k11b	my_keypos_aliases.h	120;"	d
+k120	my_keypos_aliases.h	122;"	d
+k121	my_keypos_aliases.h	124;"	d
+k122	my_keypos_aliases.h	126;"	d
+k123	my_keypos_aliases.h	128;"	d
+k124	my_keypos_aliases.h	130;"	d
+k125	my_keypos_aliases.h	132;"	d
+k126	my_keypos_aliases.h	134;"	d
+k127	my_keypos_aliases.h	136;"	d
+k128	my_keypos_aliases.h	138;"	d
+k129	my_keypos_aliases.h	140;"	d
+k12a	my_keypos_aliases.h	142;"	d
+k12b	my_keypos_aliases.h	144;"	d
+k200	my_keypos_aliases.h	146;"	d
+k201	my_keypos_aliases.h	148;"	d
+k202	my_keypos_aliases.h	150;"	d
+k203	my_keypos_aliases.h	152;"	d
+k204	my_keypos_aliases.h	154;"	d
+k205	my_keypos_aliases.h	156;"	d
+k206	my_keypos_aliases.h	158;"	d
+k207	my_keypos_aliases.h	160;"	d
+k208	my_keypos_aliases.h	162;"	d
+k209	my_keypos_aliases.h	164;"	d
+k20a	my_keypos_aliases.h	166;"	d
+k20b	my_keypos_aliases.h	168;"	d
+k210	my_keypos_aliases.h	170;"	d
+k211	my_keypos_aliases.h	172;"	d
+k212	my_keypos_aliases.h	174;"	d
+k213	my_keypos_aliases.h	176;"	d
+k214	my_keypos_aliases.h	178;"	d
+k215	my_keypos_aliases.h	180;"	d
+k216	my_keypos_aliases.h	182;"	d
+k217	my_keypos_aliases.h	184;"	d
+k218	my_keypos_aliases.h	186;"	d
+k219	my_keypos_aliases.h	188;"	d
+k21a	my_keypos_aliases.h	190;"	d
+k21b	my_keypos_aliases.h	192;"	d
+k220	my_keypos_aliases.h	194;"	d
+k221	my_keypos_aliases.h	196;"	d
+k222	my_keypos_aliases.h	198;"	d
+k223	my_keypos_aliases.h	200;"	d
+k224	my_keypos_aliases.h	202;"	d
+k225	my_keypos_aliases.h	204;"	d
+k226	my_keypos_aliases.h	206;"	d
+k227	my_keypos_aliases.h	208;"	d
+k228	my_keypos_aliases.h	210;"	d
+k229	my_keypos_aliases.h	212;"	d
+k22a	my_keypos_aliases.h	214;"	d
+k22b	my_keypos_aliases.h	216;"	d
+k300	my_keypos_aliases.h	218;"	d
+k301	my_keypos_aliases.h	220;"	d
+k302	my_keypos_aliases.h	222;"	d
+k303	my_keypos_aliases.h	224;"	d
+k304	my_keypos_aliases.h	226;"	d
+k305	my_keypos_aliases.h	228;"	d
+k306	my_keypos_aliases.h	230;"	d
+k307	my_keypos_aliases.h	232;"	d
+k308	my_keypos_aliases.h	234;"	d
+k309	my_keypos_aliases.h	236;"	d
+k30a	my_keypos_aliases.h	238;"	d
+k30b	my_keypos_aliases.h	240;"	d
+k310	my_keypos_aliases.h	242;"	d
+k311	my_keypos_aliases.h	244;"	d
+k312	my_keypos_aliases.h	246;"	d
+k313	my_keypos_aliases.h	248;"	d
+k314	my_keypos_aliases.h	250;"	d
+k315	my_keypos_aliases.h	252;"	d
+k316	my_keypos_aliases.h	254;"	d
+k317	my_keypos_aliases.h	256;"	d
+k318	my_keypos_aliases.h	258;"	d
+k319	my_keypos_aliases.h	260;"	d
+k31a	my_keypos_aliases.h	262;"	d
+k31b	my_keypos_aliases.h	264;"	d
+k320	my_keypos_aliases.h	266;"	d
+k321	my_keypos_aliases.h	268;"	d
+k322	my_keypos_aliases.h	270;"	d
+k323	my_keypos_aliases.h	272;"	d
+k324	my_keypos_aliases.h	274;"	d
+k325	my_keypos_aliases.h	276;"	d
+k326	my_keypos_aliases.h	278;"	d
+k327	my_keypos_aliases.h	280;"	d
+k328	my_keypos_aliases.h	282;"	d
+k329	my_keypos_aliases.h	284;"	d
+k32a	my_keypos_aliases.h	286;"	d
+k32b	my_keypos_aliases.h	288;"	d
+k400	my_keypos_aliases.h	290;"	d
+k401	my_keypos_aliases.h	292;"	d
+k402	my_keypos_aliases.h	294;"	d
+k403	my_keypos_aliases.h	296;"	d
+k404	my_keypos_aliases.h	298;"	d
+k405	my_keypos_aliases.h	300;"	d
+k406	my_keypos_aliases.h	302;"	d
+k407	my_keypos_aliases.h	304;"	d
+k408	my_keypos_aliases.h	306;"	d
+k409	my_keypos_aliases.h	308;"	d
+k40a	my_keypos_aliases.h	310;"	d
+k40b	my_keypos_aliases.h	312;"	d
+k410	my_keypos_aliases.h	314;"	d
+k411	my_keypos_aliases.h	316;"	d
+k412	my_keypos_aliases.h	318;"	d
+k413	my_keypos_aliases.h	320;"	d
+k414	my_keypos_aliases.h	322;"	d
+k415	my_keypos_aliases.h	324;"	d
+k416	my_keypos_aliases.h	326;"	d
+k417	my_keypos_aliases.h	328;"	d
+k418	my_keypos_aliases.h	330;"	d
+k419	my_keypos_aliases.h	332;"	d
+k41a	my_keypos_aliases.h	334;"	d
+k41b	my_keypos_aliases.h	336;"	d
+k420	my_keypos_aliases.h	338;"	d
+k421	my_keypos_aliases.h	340;"	d
+k422	my_keypos_aliases.h	342;"	d
+k423	my_keypos_aliases.h	344;"	d
+k424	my_keypos_aliases.h	346;"	d
+k425	my_keypos_aliases.h	348;"	d
+k426	my_keypos_aliases.h	350;"	d
+k427	my_keypos_aliases.h	352;"	d
+k428	my_keypos_aliases.h	354;"	d
+k429	my_keypos_aliases.h	356;"	d
+k42a	my_keypos_aliases.h	358;"	d
+k42b	my_keypos_aliases.h	360;"	d
+k500	my_keypos_aliases.h	362;"	d
+k501	my_keypos_aliases.h	364;"	d
+k502	my_keypos_aliases.h	366;"	d
+k503	my_keypos_aliases.h	368;"	d
+k504	my_keypos_aliases.h	370;"	d
+k505	my_keypos_aliases.h	372;"	d
+k506	my_keypos_aliases.h	374;"	d
+k507	my_keypos_aliases.h	376;"	d
+k508	my_keypos_aliases.h	378;"	d
+k509	my_keypos_aliases.h	380;"	d
+k50a	my_keypos_aliases.h	382;"	d
+k50b	my_keypos_aliases.h	384;"	d
+k510	my_keypos_aliases.h	386;"	d
+k511	my_keypos_aliases.h	388;"	d
+k512	my_keypos_aliases.h	390;"	d
+k513	my_keypos_aliases.h	392;"	d
+k514	my_keypos_aliases.h	394;"	d
+k515	my_keypos_aliases.h	396;"	d
+k516	my_keypos_aliases.h	398;"	d
+k517	my_keypos_aliases.h	400;"	d
+k518	my_keypos_aliases.h	402;"	d
+k519	my_keypos_aliases.h	404;"	d
+k51a	my_keypos_aliases.h	406;"	d
+k51b	my_keypos_aliases.h	408;"	d
+k520	my_keypos_aliases.h	410;"	d
+k521	my_keypos_aliases.h	412;"	d
+k522	my_keypos_aliases.h	414;"	d
+k523	my_keypos_aliases.h	416;"	d
+k524	my_keypos_aliases.h	418;"	d
+k525	my_keypos_aliases.h	420;"	d
+k526	my_keypos_aliases.h	422;"	d
+k527	my_keypos_aliases.h	424;"	d
+k528	my_keypos_aliases.h	426;"	d
+k529	my_keypos_aliases.h	428;"	d
+k52a	my_keypos_aliases.h	430;"	d
+k52b	my_keypos_aliases.h	432;"	d
+k600	my_keypos_aliases.h	434;"	d
+k601	my_keypos_aliases.h	436;"	d
+k602	my_keypos_aliases.h	438;"	d
+k603	my_keypos_aliases.h	440;"	d
+k604	my_keypos_aliases.h	442;"	d
+k605	my_keypos_aliases.h	444;"	d
+k606	my_keypos_aliases.h	446;"	d
+k607	my_keypos_aliases.h	448;"	d
+k608	my_keypos_aliases.h	450;"	d
+k609	my_keypos_aliases.h	452;"	d
+k60a	my_keypos_aliases.h	454;"	d
+k60b	my_keypos_aliases.h	456;"	d
+k610	my_keypos_aliases.h	458;"	d
+k611	my_keypos_aliases.h	460;"	d
+k612	my_keypos_aliases.h	462;"	d
+k613	my_keypos_aliases.h	464;"	d
+k614	my_keypos_aliases.h	466;"	d
+k615	my_keypos_aliases.h	468;"	d
+k616	my_keypos_aliases.h	470;"	d
+k617	my_keypos_aliases.h	472;"	d
+k618	my_keypos_aliases.h	474;"	d
+k619	my_keypos_aliases.h	476;"	d
+k61a	my_keypos_aliases.h	478;"	d
+k61b	my_keypos_aliases.h	480;"	d
+k620	my_keypos_aliases.h	482;"	d
+k621	my_keypos_aliases.h	484;"	d
+k622	my_keypos_aliases.h	486;"	d
+k623	my_keypos_aliases.h	488;"	d
+k624	my_keypos_aliases.h	490;"	d
+k625	my_keypos_aliases.h	492;"	d
+k626	my_keypos_aliases.h	494;"	d
+k627	my_keypos_aliases.h	496;"	d
+k628	my_keypos_aliases.h	498;"	d
+k629	my_keypos_aliases.h	500;"	d
+k62a	my_keypos_aliases.h	502;"	d
+k62b	my_keypos_aliases.h	504;"	d
+k700	my_keypos_aliases.h	506;"	d
+k701	my_keypos_aliases.h	508;"	d
+k702	my_keypos_aliases.h	510;"	d
+k703	my_keypos_aliases.h	512;"	d
+k704	my_keypos_aliases.h	514;"	d
+k705	my_keypos_aliases.h	516;"	d
+k706	my_keypos_aliases.h	518;"	d
+k707	my_keypos_aliases.h	520;"	d
+k708	my_keypos_aliases.h	522;"	d
+k709	my_keypos_aliases.h	524;"	d
+k70a	my_keypos_aliases.h	526;"	d
+k70b	my_keypos_aliases.h	528;"	d
+k710	my_keypos_aliases.h	530;"	d
+k711	my_keypos_aliases.h	532;"	d
+k712	my_keypos_aliases.h	534;"	d
+k713	my_keypos_aliases.h	536;"	d
+k714	my_keypos_aliases.h	538;"	d
+k715	my_keypos_aliases.h	540;"	d
+k716	my_keypos_aliases.h	542;"	d
+k717	my_keypos_aliases.h	544;"	d
+k718	my_keypos_aliases.h	546;"	d
+k719	my_keypos_aliases.h	548;"	d
+k71a	my_keypos_aliases.h	550;"	d
+k71b	my_keypos_aliases.h	552;"	d
+k720	my_keypos_aliases.h	554;"	d
+k721	my_keypos_aliases.h	556;"	d
+k722	my_keypos_aliases.h	558;"	d
+k723	my_keypos_aliases.h	560;"	d
+k724	my_keypos_aliases.h	562;"	d
+k725	my_keypos_aliases.h	564;"	d
+k726	my_keypos_aliases.h	566;"	d
+k727	my_keypos_aliases.h	568;"	d
+k728	my_keypos_aliases.h	570;"	d
+k729	my_keypos_aliases.h	572;"	d
+k72a	my_keypos_aliases.h	574;"	d
+k72b	my_keypos_aliases.h	576;"	d
+k800	my_keypos_aliases.h	578;"	d
+k801	my_keypos_aliases.h	580;"	d
+k802	my_keypos_aliases.h	582;"	d
+k803	my_keypos_aliases.h	584;"	d
+k804	my_keypos_aliases.h	586;"	d
+k805	my_keypos_aliases.h	588;"	d
+k806	my_keypos_aliases.h	590;"	d
+k807	my_keypos_aliases.h	592;"	d
+k808	my_keypos_aliases.h	594;"	d
+k809	my_keypos_aliases.h	596;"	d
+k80a	my_keypos_aliases.h	598;"	d
+k80b	my_keypos_aliases.h	600;"	d
+k810	my_keypos_aliases.h	602;"	d
+k811	my_keypos_aliases.h	604;"	d
+k812	my_keypos_aliases.h	606;"	d
+k813	my_keypos_aliases.h	608;"	d
+k814	my_keypos_aliases.h	610;"	d
+k815	my_keypos_aliases.h	612;"	d
+k816	my_keypos_aliases.h	614;"	d
+k817	my_keypos_aliases.h	616;"	d
+k818	my_keypos_aliases.h	618;"	d
+k819	my_keypos_aliases.h	620;"	d
+k81a	my_keypos_aliases.h	622;"	d
+k81b	my_keypos_aliases.h	624;"	d
+k820	my_keypos_aliases.h	626;"	d
+k821	my_keypos_aliases.h	628;"	d
+k822	my_keypos_aliases.h	630;"	d
+k823	my_keypos_aliases.h	632;"	d
+k824	my_keypos_aliases.h	634;"	d
+k825	my_keypos_aliases.h	636;"	d
+k826	my_keypos_aliases.h	638;"	d
+k827	my_keypos_aliases.h	640;"	d
+k828	my_keypos_aliases.h	642;"	d
+k829	my_keypos_aliases.h	644;"	d
+k82a	my_keypos_aliases.h	646;"	d
+k82b	my_keypos_aliases.h	648;"	d
+key_combos	my_combos.h	/^combo_t key_combos[MY_NB_COMBOS] = {$/;"	v
+keymaps	generated_keymap.h	/^const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {$/;"	v
+keymaps	my_keymap.h	/^const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {$/;"	v
+keymaps	my_manual_keymap.h	/^const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {$/;"	v
+keys_commas	combos.py	/^    def keys_commas(self):$/;"	m	class:Combo
+km000	my_keypos_aliases.h	3;"	d
+km001	my_keypos_aliases.h	5;"	d
+km002	my_keypos_aliases.h	7;"	d
+km003	my_keypos_aliases.h	9;"	d
+km004	my_keypos_aliases.h	11;"	d
+km005	my_keypos_aliases.h	13;"	d
+km006	my_keypos_aliases.h	15;"	d
+km007	my_keypos_aliases.h	17;"	d
+km008	my_keypos_aliases.h	19;"	d
+km009	my_keypos_aliases.h	21;"	d
+km00a	my_keypos_aliases.h	23;"	d
+km00b	my_keypos_aliases.h	25;"	d
+km010	my_keypos_aliases.h	27;"	d
+km011	my_keypos_aliases.h	29;"	d
+km012	my_keypos_aliases.h	31;"	d
+km013	my_keypos_aliases.h	33;"	d
+km014	my_keypos_aliases.h	35;"	d
+km015	my_keypos_aliases.h	37;"	d
+km016	my_keypos_aliases.h	39;"	d
+km017	my_keypos_aliases.h	41;"	d
+km018	my_keypos_aliases.h	43;"	d
+km019	my_keypos_aliases.h	45;"	d
+km01a	my_keypos_aliases.h	47;"	d
+km01b	my_keypos_aliases.h	49;"	d
+km020	my_keypos_aliases.h	51;"	d
+km021	my_keypos_aliases.h	53;"	d
+km022	my_keypos_aliases.h	55;"	d
+km023	my_keypos_aliases.h	57;"	d
+km024	my_keypos_aliases.h	59;"	d
+km025	my_keypos_aliases.h	61;"	d
+km026	my_keypos_aliases.h	63;"	d
+km027	my_keypos_aliases.h	65;"	d
+km028	my_keypos_aliases.h	67;"	d
+km029	my_keypos_aliases.h	69;"	d
+km02a	my_keypos_aliases.h	71;"	d
+km02b	my_keypos_aliases.h	73;"	d
+km100	my_keypos_aliases.h	75;"	d
+km101	my_keypos_aliases.h	77;"	d
+km102	my_keypos_aliases.h	79;"	d
+km103	my_keypos_aliases.h	81;"	d
+km104	my_keypos_aliases.h	83;"	d
+km105	my_keypos_aliases.h	85;"	d
+km106	my_keypos_aliases.h	87;"	d
+km107	my_keypos_aliases.h	89;"	d
+km108	my_keypos_aliases.h	91;"	d
+km109	my_keypos_aliases.h	93;"	d
+km10a	my_keypos_aliases.h	95;"	d
+km10b	my_keypos_aliases.h	97;"	d
+km110	my_keypos_aliases.h	99;"	d
+km111	my_keypos_aliases.h	101;"	d
+km112	my_keypos_aliases.h	103;"	d
+km113	my_keypos_aliases.h	105;"	d
+km114	my_keypos_aliases.h	107;"	d
+km115	my_keypos_aliases.h	109;"	d
+km116	my_keypos_aliases.h	111;"	d
+km117	my_keypos_aliases.h	113;"	d
+km118	my_keypos_aliases.h	115;"	d
+km119	my_keypos_aliases.h	117;"	d
+km11a	my_keypos_aliases.h	119;"	d
+km11b	my_keypos_aliases.h	121;"	d
+km120	my_keypos_aliases.h	123;"	d
+km121	my_keypos_aliases.h	125;"	d
+km122	my_keypos_aliases.h	127;"	d
+km123	my_keypos_aliases.h	129;"	d
+km124	my_keypos_aliases.h	131;"	d
+km125	my_keypos_aliases.h	133;"	d
+km126	my_keypos_aliases.h	135;"	d
+km127	my_keypos_aliases.h	137;"	d
+km128	my_keypos_aliases.h	139;"	d
+km129	my_keypos_aliases.h	141;"	d
+km12a	my_keypos_aliases.h	143;"	d
+km12b	my_keypos_aliases.h	145;"	d
+km200	my_keypos_aliases.h	147;"	d
+km201	my_keypos_aliases.h	149;"	d
+km202	my_keypos_aliases.h	151;"	d
+km203	my_keypos_aliases.h	153;"	d
+km204	my_keypos_aliases.h	155;"	d
+km205	my_keypos_aliases.h	157;"	d
+km206	my_keypos_aliases.h	159;"	d
+km207	my_keypos_aliases.h	161;"	d
+km208	my_keypos_aliases.h	163;"	d
+km209	my_keypos_aliases.h	165;"	d
+km20a	my_keypos_aliases.h	167;"	d
+km20b	my_keypos_aliases.h	169;"	d
+km210	my_keypos_aliases.h	171;"	d
+km211	my_keypos_aliases.h	173;"	d
+km212	my_keypos_aliases.h	175;"	d
+km213	my_keypos_aliases.h	177;"	d
+km214	my_keypos_aliases.h	179;"	d
+km215	my_keypos_aliases.h	181;"	d
+km216	my_keypos_aliases.h	183;"	d
+km217	my_keypos_aliases.h	185;"	d
+km218	my_keypos_aliases.h	187;"	d
+km219	my_keypos_aliases.h	189;"	d
+km21a	my_keypos_aliases.h	191;"	d
+km21b	my_keypos_aliases.h	193;"	d
+km220	my_keypos_aliases.h	195;"	d
+km221	my_keypos_aliases.h	197;"	d
+km222	my_keypos_aliases.h	199;"	d
+km223	my_keypos_aliases.h	201;"	d
+km224	my_keypos_aliases.h	203;"	d
+km225	my_keypos_aliases.h	205;"	d
+km226	my_keypos_aliases.h	207;"	d
+km227	my_keypos_aliases.h	209;"	d
+km228	my_keypos_aliases.h	211;"	d
+km229	my_keypos_aliases.h	213;"	d
+km22a	my_keypos_aliases.h	215;"	d
+km22b	my_keypos_aliases.h	217;"	d
+km300	my_keypos_aliases.h	219;"	d
+km301	my_keypos_aliases.h	221;"	d
+km302	my_keypos_aliases.h	223;"	d
+km303	my_keypos_aliases.h	225;"	d
+km304	my_keypos_aliases.h	227;"	d
+km305	my_keypos_aliases.h	229;"	d
+km306	my_keypos_aliases.h	231;"	d
+km307	my_keypos_aliases.h	233;"	d
+km308	my_keypos_aliases.h	235;"	d
+km309	my_keypos_aliases.h	237;"	d
+km30a	my_keypos_aliases.h	239;"	d
+km30b	my_keypos_aliases.h	241;"	d
+km310	my_keypos_aliases.h	243;"	d
+km311	my_keypos_aliases.h	245;"	d
+km312	my_keypos_aliases.h	247;"	d
+km313	my_keypos_aliases.h	249;"	d
+km314	my_keypos_aliases.h	251;"	d
+km315	my_keypos_aliases.h	253;"	d
+km316	my_keypos_aliases.h	255;"	d
+km317	my_keypos_aliases.h	257;"	d
+km318	my_keypos_aliases.h	259;"	d
+km319	my_keypos_aliases.h	261;"	d
+km31a	my_keypos_aliases.h	263;"	d
+km31b	my_keypos_aliases.h	265;"	d
+km320	my_keypos_aliases.h	267;"	d
+km321	my_keypos_aliases.h	269;"	d
+km322	my_keypos_aliases.h	271;"	d
+km323	my_keypos_aliases.h	273;"	d
+km324	my_keypos_aliases.h	275;"	d
+km325	my_keypos_aliases.h	277;"	d
+km326	my_keypos_aliases.h	279;"	d
+km327	my_keypos_aliases.h	281;"	d
+km328	my_keypos_aliases.h	283;"	d
+km329	my_keypos_aliases.h	285;"	d
+km32a	my_keypos_aliases.h	287;"	d
+km32b	my_keypos_aliases.h	289;"	d
+km400	my_keypos_aliases.h	291;"	d
+km401	my_keypos_aliases.h	293;"	d
+km402	my_keypos_aliases.h	295;"	d
+km403	my_keypos_aliases.h	297;"	d
+km404	my_keypos_aliases.h	299;"	d
+km405	my_keypos_aliases.h	301;"	d
+km406	my_keypos_aliases.h	303;"	d
+km407	my_keypos_aliases.h	305;"	d
+km408	my_keypos_aliases.h	307;"	d
+km409	my_keypos_aliases.h	309;"	d
+km40a	my_keypos_aliases.h	311;"	d
+km40b	my_keypos_aliases.h	313;"	d
+km410	my_keypos_aliases.h	315;"	d
+km411	my_keypos_aliases.h	317;"	d
+km412	my_keypos_aliases.h	319;"	d
+km413	my_keypos_aliases.h	321;"	d
+km414	my_keypos_aliases.h	323;"	d
+km415	my_keypos_aliases.h	325;"	d
+km416	my_keypos_aliases.h	327;"	d
+km417	my_keypos_aliases.h	329;"	d
+km418	my_keypos_aliases.h	331;"	d
+km419	my_keypos_aliases.h	333;"	d
+km41a	my_keypos_aliases.h	335;"	d
+km41b	my_keypos_aliases.h	337;"	d
+km420	my_keypos_aliases.h	339;"	d
+km421	my_keypos_aliases.h	341;"	d
+km422	my_keypos_aliases.h	343;"	d
+km423	my_keypos_aliases.h	345;"	d
+km424	my_keypos_aliases.h	347;"	d
+km425	my_keypos_aliases.h	349;"	d
+km426	my_keypos_aliases.h	351;"	d
+km427	my_keypos_aliases.h	353;"	d
+km428	my_keypos_aliases.h	355;"	d
+km429	my_keypos_aliases.h	357;"	d
+km42a	my_keypos_aliases.h	359;"	d
+km42b	my_keypos_aliases.h	361;"	d
+km500	my_keypos_aliases.h	363;"	d
+km501	my_keypos_aliases.h	365;"	d
+km502	my_keypos_aliases.h	367;"	d
+km503	my_keypos_aliases.h	369;"	d
+km504	my_keypos_aliases.h	371;"	d
+km505	my_keypos_aliases.h	373;"	d
+km506	my_keypos_aliases.h	375;"	d
+km507	my_keypos_aliases.h	377;"	d
+km508	my_keypos_aliases.h	379;"	d
+km509	my_keypos_aliases.h	381;"	d
+km50a	my_keypos_aliases.h	383;"	d
+km50b	my_keypos_aliases.h	385;"	d
+km510	my_keypos_aliases.h	387;"	d
+km511	my_keypos_aliases.h	389;"	d
+km512	my_keypos_aliases.h	391;"	d
+km513	my_keypos_aliases.h	393;"	d
+km514	my_keypos_aliases.h	395;"	d
+km515	my_keypos_aliases.h	397;"	d
+km516	my_keypos_aliases.h	399;"	d
+km517	my_keypos_aliases.h	401;"	d
+km518	my_keypos_aliases.h	403;"	d
+km519	my_keypos_aliases.h	405;"	d
+km51a	my_keypos_aliases.h	407;"	d
+km51b	my_keypos_aliases.h	409;"	d
+km520	my_keypos_aliases.h	411;"	d
+km521	my_keypos_aliases.h	413;"	d
+km522	my_keypos_aliases.h	415;"	d
+km523	my_keypos_aliases.h	417;"	d
+km524	my_keypos_aliases.h	419;"	d
+km525	my_keypos_aliases.h	421;"	d
+km526	my_keypos_aliases.h	423;"	d
+km527	my_keypos_aliases.h	425;"	d
+km528	my_keypos_aliases.h	427;"	d
+km529	my_keypos_aliases.h	429;"	d
+km52a	my_keypos_aliases.h	431;"	d
+km52b	my_keypos_aliases.h	433;"	d
+km600	my_keypos_aliases.h	435;"	d
+km601	my_keypos_aliases.h	437;"	d
+km602	my_keypos_aliases.h	439;"	d
+km603	my_keypos_aliases.h	441;"	d
+km604	my_keypos_aliases.h	443;"	d
+km605	my_keypos_aliases.h	445;"	d
+km606	my_keypos_aliases.h	447;"	d
+km607	my_keypos_aliases.h	449;"	d
+km608	my_keypos_aliases.h	451;"	d
+km609	my_keypos_aliases.h	453;"	d
+km60a	my_keypos_aliases.h	455;"	d
+km60b	my_keypos_aliases.h	457;"	d
+km610	my_keypos_aliases.h	459;"	d
+km611	my_keypos_aliases.h	461;"	d
+km612	my_keypos_aliases.h	463;"	d
+km613	my_keypos_aliases.h	465;"	d
+km614	my_keypos_aliases.h	467;"	d
+km615	my_keypos_aliases.h	469;"	d
+km616	my_keypos_aliases.h	471;"	d
+km617	my_keypos_aliases.h	473;"	d
+km618	my_keypos_aliases.h	475;"	d
+km619	my_keypos_aliases.h	477;"	d
+km61a	my_keypos_aliases.h	479;"	d
+km61b	my_keypos_aliases.h	481;"	d
+km620	my_keypos_aliases.h	483;"	d
+km621	my_keypos_aliases.h	485;"	d
+km622	my_keypos_aliases.h	487;"	d
+km623	my_keypos_aliases.h	489;"	d
+km624	my_keypos_aliases.h	491;"	d
+km625	my_keypos_aliases.h	493;"	d
+km626	my_keypos_aliases.h	495;"	d
+km627	my_keypos_aliases.h	497;"	d
+km628	my_keypos_aliases.h	499;"	d
+km629	my_keypos_aliases.h	501;"	d
+km62a	my_keypos_aliases.h	503;"	d
+km62b	my_keypos_aliases.h	505;"	d
+km700	my_keypos_aliases.h	507;"	d
+km701	my_keypos_aliases.h	509;"	d
+km702	my_keypos_aliases.h	511;"	d
+km703	my_keypos_aliases.h	513;"	d
+km704	my_keypos_aliases.h	515;"	d
+km705	my_keypos_aliases.h	517;"	d
+km706	my_keypos_aliases.h	519;"	d
+km707	my_keypos_aliases.h	521;"	d
+km708	my_keypos_aliases.h	523;"	d
+km709	my_keypos_aliases.h	525;"	d
+km70a	my_keypos_aliases.h	527;"	d
+km70b	my_keypos_aliases.h	529;"	d
+km710	my_keypos_aliases.h	531;"	d
+km711	my_keypos_aliases.h	533;"	d
+km712	my_keypos_aliases.h	535;"	d
+km713	my_keypos_aliases.h	537;"	d
+km714	my_keypos_aliases.h	539;"	d
+km715	my_keypos_aliases.h	541;"	d
+km716	my_keypos_aliases.h	543;"	d
+km717	my_keypos_aliases.h	545;"	d
+km718	my_keypos_aliases.h	547;"	d
+km719	my_keypos_aliases.h	549;"	d
+km71a	my_keypos_aliases.h	551;"	d
+km71b	my_keypos_aliases.h	553;"	d
+km720	my_keypos_aliases.h	555;"	d
+km721	my_keypos_aliases.h	557;"	d
+km722	my_keypos_aliases.h	559;"	d
+km723	my_keypos_aliases.h	561;"	d
+km724	my_keypos_aliases.h	563;"	d
+km725	my_keypos_aliases.h	565;"	d
+km726	my_keypos_aliases.h	567;"	d
+km727	my_keypos_aliases.h	569;"	d
+km728	my_keypos_aliases.h	571;"	d
+km729	my_keypos_aliases.h	573;"	d
+km72a	my_keypos_aliases.h	575;"	d
+km72b	my_keypos_aliases.h	577;"	d
+km800	my_keypos_aliases.h	579;"	d
+km801	my_keypos_aliases.h	581;"	d
+km802	my_keypos_aliases.h	583;"	d
+km803	my_keypos_aliases.h	585;"	d
+km804	my_keypos_aliases.h	587;"	d
+km805	my_keypos_aliases.h	589;"	d
+km806	my_keypos_aliases.h	591;"	d
+km807	my_keypos_aliases.h	593;"	d
+km808	my_keypos_aliases.h	595;"	d
+km809	my_keypos_aliases.h	597;"	d
+km80a	my_keypos_aliases.h	599;"	d
+km80b	my_keypos_aliases.h	601;"	d
+km810	my_keypos_aliases.h	603;"	d
+km811	my_keypos_aliases.h	605;"	d
+km812	my_keypos_aliases.h	607;"	d
+km813	my_keypos_aliases.h	609;"	d
+km814	my_keypos_aliases.h	611;"	d
+km815	my_keypos_aliases.h	613;"	d
+km816	my_keypos_aliases.h	615;"	d
+km817	my_keypos_aliases.h	617;"	d
+km818	my_keypos_aliases.h	619;"	d
+km819	my_keypos_aliases.h	621;"	d
+km81a	my_keypos_aliases.h	623;"	d
+km81b	my_keypos_aliases.h	625;"	d
+km820	my_keypos_aliases.h	627;"	d
+km821	my_keypos_aliases.h	629;"	d
+km822	my_keypos_aliases.h	631;"	d
+km823	my_keypos_aliases.h	633;"	d
+km824	my_keypos_aliases.h	635;"	d
+km825	my_keypos_aliases.h	637;"	d
+km826	my_keypos_aliases.h	639;"	d
+km827	my_keypos_aliases.h	641;"	d
+km828	my_keypos_aliases.h	643;"	d
+km829	my_keypos_aliases.h	645;"	d
+km82a	my_keypos_aliases.h	647;"	d
+km82b	my_keypos_aliases.h	649;"	d
+min_version_info	check_python_version.py	/^min_version_info = [int(x) for x in min_version_str.split(".")]$/;"	v
+min_version_str	check_python_version.py	/^min_version_str = "3.7.0"$/;"	v
+num2chr	keypos.py	/^def num2chr(num) -> str:$/;"	f
+parse_keymap	keypos.py	/^def parse_keymap() -> list:$/;"	f
+process_combo_event	my_combos.h	/^void process_combo_event(uint16_t combo_index, bool pressed) {$/;"	f
+process_record_user	my_custom_keycodes.h	/^bool process_record_user(uint16_t keycode, keyrecord_t *record)$/;"	f
+verbose	check_python_version.py	/^verbose = True$/;"	v
+version_str	check_python_version.py	/^version_str = ".".join([str(x) for x in version_info][:3])$/;"	v
+write_combos_definitions_file	combos.py	/^    def write_combos_definitions_file(self, filename=None):$/;"	f
+write_combos_file	combos.py	/^    def write_combos_file(self, filename=None):$/;"	f
