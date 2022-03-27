@@ -25,6 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /* Select hand configuration */
 
 // #define MASTER_LEFT
+// use the right half as the main one to connect to the PC
 #define MASTER_RIGHT
 // #define EE_HANDS
 
@@ -33,13 +34,13 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // EVERYTHING TAPPING-RELATED
 
 #define IGNORE_MOD_TAP_INTERRUPT
-// #define TAPPING_FORCE_HOLD
 #define TAPPING_TERM 200 // default QMK value: 200
-#define TAPPING_TERM_HOMEROWMODS 300
+#define TAPPING_TERM_HOMEROWMODS 300 // original value :300
 
 #define TAPPING_TERM_PER_KEY
-// if defined, disables double-tap
+// if defined, TAPPING_FORCE_HOLD disables double-tap
 // #define TAPPING_FORCE_HOLD
+// allows a per-key tuning of TAPPING_FORCE_HOLD 
 #define TAPPING_FORCE_HOLD_PER_KEY
 
 // #undef RGBLED_NUM
@@ -52,13 +53,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // EVERYTHING COMBO-RELATED. See https://beta.docs.qmk.fm/using-qmk/software-features/feature_combo
 // #include "my_combos_definitions.h"
 // #define COMBO_COUNT MY_NB_COMBOS // defined in my_combos_definitions.h
-#define COMBO_COUNT 41
+
+// undefining COMBO_COUNT to use instead COMBO_LEN defined in my_combos.h
+// #define COMBO_COUNT 48
 
 // the longer COMBO_TERM is, the more time it leaves to complete the combo. However, it will result in more mistypes.
 // #define COMBO_TERM 50 // 50 is a pretty good value, used it for long with little mistypes
 #define COMBO_TERM 30
+// when using combo mods, enables the "keep combo pressed to keep mod pressed" behavior
 #define COMBO_MUST_HOLD_MODS
-#define COMBO_HOLD_TERM 50
+#define COMBO_HOLD_TERM 30
 // #ifdef RGBLIGHT_ENABLE
 //     #undef RGBLED_NUM
 //     #define RGBLIGHT_ANIMATIONS
