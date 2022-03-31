@@ -74,7 +74,7 @@
 #define k100 KC_TRNS
 #define km100  KC_TRNS
 #define k101  fAMP
-#define km101  fMICR
+#define km101  fGRV
 #define k102  fLCBR
 #define km102  fRCBR
 #define k103  fLBRC
@@ -91,7 +91,7 @@
 #define km108  fLBRC
 #define k109  fRCBR
 #define km109  fLCBR
-#define k10a  fMICR
+#define k10a  fGRV
 #define km10a  fAMP
 #define k10b  KC_TRNS
 #define km10b KC_TRNS
@@ -130,8 +130,8 @@
 #define k124  fPIPE
 #define km124  fPLUS
 #define k125  fPERC
-#define km125  fGRV
-#define k126  fGRV
+#define km125  fMICR
+#define k126  fMICR
 #define km126  fPERC
 #define k127  fPLUS
 #define km127  fPIPE
