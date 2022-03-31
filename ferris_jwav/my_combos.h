@@ -123,8 +123,8 @@ combo_t key_combos[MY_NB_COMBOS] = {
     // [CB_EACU_SYM_RIGHT] = COMBO(combo_eacu_sym_left, fEACU),
     // [CB_EGRV_SYM_RIGHT] = COMBO(combo_egrv_sym_left, fEGRV),
     // [CB_AGRV_SYM_RIGHT] = COMBO(combo_agrv_sym_left, fAGRV),
-    [CB_UGRV_SYM_RIGHT] = COMBO(combo_ugrv_sym_left, fUGRV),
-    [CB_CCED_SYM_RIGHT] = COMBO(combo_cced_sym_left, fCCED),
+    // [CB_UGRV_SYM_RIGHT] = COMBO(combo_ugrv_sym_left, fUGRV),
+    // [CB_CCED_SYM_RIGHT] = COMBO(combo_cced_sym_left, fCCED),
 
     // [CB_ECIRC_SYM_LEFT] = COMBO_ACTION(combo_ecirc_sym_left),
     // [CB_ACIRC_SYM_LEFT] = COMBO_ACTION(combo_acirc_sym_left),
