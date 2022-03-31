@@ -58,6 +58,7 @@ enum combo_events {
     CB_GUI_SYM_RIGHT,
     CB_ALT_SYM_LEFT,
     CB_ALT_SYM_RIGHT,
+    CB_APP_BASE_RIGHT,
     CB_DUMMY, // I don't know why, but adding this dummy combo at the end prevents the "combo characters repeat themselves when pressed only once" bug
     MY_NB_COMBOS // will contain the number of elements in this enum
 };
@@ -117,6 +118,7 @@ const uint16_t PROGMEM combo_spc_base_left[] = {k001, k004, COMBO_END};
 const uint16_t PROGMEM combo_switchhands_num_left[] = {k222, k224, COMBO_END};
 const uint16_t PROGMEM combo_ralt_osm_base_right[] = {km001, km004, COMBO_END};
 
+const uint16_t PROGMEM combo_app_base_right[] = {km001, km011, COMBO_END};
 
 const uint16_t PROGMEM combo_gui_sym_left[] = {k111, k112, COMBO_END};
 const uint16_t PROGMEM combo_gui_sym_right[] = {km111, km112, COMBO_END};
@@ -175,6 +177,7 @@ combo_t key_combos[MY_NB_COMBOS] = {
     [CB_SPC_NUM_LEFT] = COMBO(combo_spc_num_left, KC_SPC),
     [CB_SWITCHHANDS_NUM_LEFT] = COMBO(combo_switchhands_num_left, OSL(8)),
     [CB_RALT_OSM_BASE_RIGHT] = COMBO(combo_ralt_osm_base_right, OSM(MOD_RALT)),
+    [CB_APP_BASE_RIGHT] = COMBO(combo_app_base_right, KC_APP),
 
     [CB_GUI_SYM_LEFT] =  COMBO(combo_gui_sym_left,  KC_LGUI),
     [CB_GUI_SYM_RIGHT] = COMBO(combo_gui_sym_right, KC_LGUI),
