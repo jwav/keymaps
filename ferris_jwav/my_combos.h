@@ -46,16 +46,19 @@ enum combo_events {
     CB_BSP_SYM_RIGHT,
     CB_ENTER_BASE_RIGHT,
     CB_RESET_FUNC_LEFT,
+    CB_APP_BASE_RIGHT,
     CB_FOOBAR, // I don't know why, but adding this dummy combo at the end prevents the "combo characters repeat themselves when pressed only once" bug
     MY_NB_COMBOS // will contain the number of elements in this enum
 };
+
+uint16_t COMBO_LEN = MY_NB_COMBOS;
 
 // symbols layer, left side
 // const uint16_t PROGMEM combo_eacu_sym_left[] = {k103, k104, COMBO_END};
 // const uint16_t PROGMEM combo_egrv_sym_left[] = {k102, k103, COMBO_END};
 // const uint16_t PROGMEM combo_agrv_sym_left[] = {k102, k104, COMBO_END};
-const uint16_t PROGMEM combo_cced_sym_left[] = {k122, k121, COMBO_END};
-const uint16_t PROGMEM combo_ugrv_sym_left[] = {k123, k122, COMBO_END};
+// const uint16_t PROGMEM combo_cced_sym_left[] = {k122, k121, COMBO_END};
+// const uint16_t PROGMEM combo_ugrv_sym_left[] = {k123, k122, COMBO_END};
 
 // const uint16_t PROGMEM combo_ecirc_sym_left[] = {k113, k114, COMBO_END};
 // const uint16_t PROGMEM combo_acirc_sym_left[] = {k112, k114, COMBO_END};
@@ -89,6 +92,7 @@ const uint16_t PROGMEM combo_deadcirc_base_right[] = {km003, km001, COMBO_END};
 // esc, bsp combos
 const uint16_t PROGMEM combo_esc_base_left[] = {k001, k003, COMBO_END}; // upper row esc
 const uint16_t PROGMEM combo_esc_base_right[] = {km002, km012, COMBO_END};
+const uint16_t PROGMEM combo_app_base_right[] = {km000, km001, COMBO_END};
 // const uint16_t PROGMEM combo_esc_base_bis[] = {k022, k021, COMBO_END}; // alternate base layer esc
 const uint16_t PROGMEM combo_esc_base_bis[] = {k001, k002, COMBO_END}; // alternate esc
 const uint16_t PROGMEM combo_enter_base_right[] = {km020, k021, COMBO_END};
@@ -152,6 +156,7 @@ combo_t key_combos[MY_NB_COMBOS] = {
     [CB_BSP_SYM_LEFT] = COMBO(combo_bsp_sym_left, KC_BSPC),
     [CB_ESC_SYM_RIGHT] = COMBO(combo_esc_sym_right, KC_ESC),
     [CB_ENTER_BASE_RIGHT] = COMBO(combo_enter_base_right, KC_ENT),
+    [CB_APP_BASE_RIGHT] = COMBO(combo_app_base_right, KC_APP),
     [CB_BSP_SYM_RIGHT] = COMBO(combo_bsp_sym_right, KC_BSPC),
     // [CB_RESET_FUNC_LEFT] = COMBO(combo_reset_func_left, EEP_RST),
     // [CB_RESET_FUNC_LEFT] = COMBO(combo_reset_func_left, RESET),

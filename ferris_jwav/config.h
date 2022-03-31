@@ -41,7 +41,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 // EVERYTHING COMBO-RELATED. See https://beta.docs.qmk.fm/using-qmk/software-features/feature_combo
 // #include "my_combos_definitions.h"
 // #define COMBO_COUNT MY_NB_COMBOS // defined in my_combos_definitions.h
-#define COMBO_COUNT 40
+// replace by COMBO_LEN
+// #define COMBO_COUNT 40
 
 // the longer COMBO_TERM is, the more time it leaves to complete the combo. However, it will result in more mistypes.
 // #define COMBO_TERM 50 // 50 is a pretty good value, used it for long with little mistypes
