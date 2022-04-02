@@ -48,7 +48,7 @@
       "LSFT_T(KC_TAB)",
       "RSFT_T(KC_BSPC)",
       "LT(1,KC_SPC)",
-      "RCTL_T(KC_ENT)"
+      "LALT_T(KC_ENT)"
     ],
     [
       "KC_TRNS",
@@ -136,7 +136,7 @@
       "DF(2)",
       "KC_TRNS",
       "LT(3,KC_ENT)",
-      "LCTL_T(KC_SPC)"
+      "LALT_T(KC_SPC)"
     ],
     [
       "KC_TRNS",
@@ -219,12 +219,12 @@
       "KC_BTN2",
       "KC_BTN5",
       "KC_TRNS",
-      "KC_NO",
+      "KC_TRNS",
       "TO(0)",
-      "KC_NO",
+      "KC_TRNS",
       "KC_BTN1",
       "KC_ACL2",
-      "KC_NO"
+      "KC_TRNS"
     ],
     [
       "KC_TRNS",
@@ -268,7 +268,7 @@
       "LSFT_T(KC_TAB)",
       "LSFT_T(KC_BSPC)",
       "LT(1,KC_SPC)",
-      "RCTL_T(KC_ENT)"
+      "LALT_T(KC_ENT)"
     ],
     [
       "KC_TRNS",
@@ -312,7 +312,7 @@
       "LSFT_T(KC_TAB)",
       "LSFT_T(KC_BSPC)",
       "LT(1,KC_SPC)",
-      "LCTL_T(KC_ENT)"
+      "LALT_T(KC_ENT)"
     ],
     [
       "KC_TRNS",
@@ -395,7 +395,7 @@
       "KC_X",
       "KC_W",
       "KC_RGUI",
-      "LCTL_T(KC_ENT)",
+      "LALT_T(KC_ENT)",
       "DF(0)",
       "LSFT_T(KC_BSPC)",
       "LSFT_T(KC_TAB)",
