@@ -1,7 +1,7 @@
 // NOTE: I voluntarily disabled the include guard
 // because if this file is included more than once
 // I need to know about it.
-// #pragma once
+#pragma once
 
 #include "my_french_keycode_aliases.h"
 #include "my_keypos_aliases.h"
@@ -35,13 +35,13 @@ enum combo_events {
     // CB_OCIRC_SYM_RIGHT,
     // CB_ICIRC_SYM_RIGHT,
     // CB_UCIRC_SYM_RIGHT,
+    // CB_ECIRC_BASE_LEFT,
 
     CB_ESC_BASE_LEFT,
     // CB_ESC_BASE_RIGHT,
     CB_ESC_BASE_BIS,
     CB_DEADCIRC_BASE_RIGHT,
     CB_DEADCIRC_BASE_LEFT,
-    CB_DEADDIAE_BASE_RIGHT,
     CB_ESC_NUM_LEFT,
     CB_BSP_NUM_LEFT,
     CB_DEL_NUM_LEFT,
@@ -49,81 +49,70 @@ enum combo_events {
     CB_BSP_SYM_LEFT,
     CB_ESC_SYM_RIGHT,
     CB_BSP_SYM_RIGHT,
-    CB_ENT_BASE_RIGHT,
+    // CB_ENT_BASE_RIGHT,
     CB_SPC_BASE_LEFT,
     CB_SPC_NUM_LEFT,
     CB_SWITCHHANDS_NUM_LEFT,
+    CB_SWITCHHANDS_BASE_LEFT,
+    CB_PLAY_BASE_LEFT,
     CB_RALT_OSM_BASE_RIGHT,
+
     CB_GUI_SYM_LEFT,
-    CB_GUI_SYM_RIGHT,
+    CB_CTL_SYM_LEFT,
     CB_ALT_SYM_LEFT,
+    CB_GUI_SYM_RIGHT,
+    CB_CTL_SYM_RIGHT,
     CB_ALT_SYM_RIGHT,
+
     CB_APP_BASE_RIGHT,
+    CB_MOUSE1_BASE_LEFT,
     CB_DUMMY, // I don't know why, but adding this dummy combo at the end prevents the "combo characters repeat themselves when pressed only once" bug
     MY_NB_COMBOS // will contain the number of elements in this enum
 };
 
 uint16_t COMBO_LEN = MY_NB_COMBOS;
 
-// symbols layer, left side
-// const uint16_t PROGMEM combo_eacu_sym_left[] = {k103, k104, COMBO_END};
-// const uint16_t PROGMEM combo_egrv_sym_left[] = {k102, k103, COMBO_END};
-// const uint16_t PROGMEM combo_agrv_sym_left[] = {k102, k104, COMBO_END};
-// const uint16_t PROGMEM combo_cced_sym_left[] = {k122, k123, COMBO_END};
-// const uint16_t PROGMEM combo_ugrv_sym_left[] = {k123, k124, COMBO_END};
-// const uint16_t PROGMEM combo_ecirc_sym_left[] = {k113, k114, COMBO_END};
-// const uint16_t PROGMEM combo_acirc_sym_left[] = {k112, k114, COMBO_END};
-// const uint16_t PROGMEM combo_ocirc_sym_left[] = {k112, k113, COMBO_END};
-// const uint16_t PROGMEM combo_ucirc_sym_left[] = {k114, k111, COMBO_END};
-// const uint16_t PROGMEM combo_icirc_sym_left[] = {k114, k115, COMBO_END};
-
-// symbols layer, right side
-// const uint16_t PROGMEM combo_eacu_sym_right[] = {km113, km114, COMBO_END};
-// const uint16_t PROGMEM combo_egrv_sym_right[] = {km112, km113, COMBO_END};
-// const uint16_t PROGMEM combo_agrv_sym_right[] = {km112, km114, COMBO_END};
-// const uint16_t PROGMEM combo_cced_sym_right[] = {km120, km121, COMBO_END};
-// const uint16_t PROGMEM combo_ugrv_sym_right[] = {km123, km124, COMBO_END};
-
-// const uint16_t PROGMEM combo_ecirc_sym_right[] = {km113, km114, COMBO_END};
-// const uint16_t PROGMEM combo_acirc_sym_right[] = {km112, km114, COMBO_END};
-// const uint16_t PROGMEM combo_ocirc_sym_right[] = {km112, km113, COMBO_END};
-// const uint16_t PROGMEM combo_ucirc_sym_right[] = {km114, km111, COMBO_END};
-// const uint16_t PROGMEM combo_icirc_sym_right[] = {km114, km115, COMBO_END};
-
-// base layer, right side
-const uint16_t PROGMEM combo_eacu_base_right[] = {km023, km024, COMBO_END};
-const uint16_t PROGMEM combo_egrv_base_right[] = {km022, km023, COMBO_END};
-const uint16_t PROGMEM combo_agrv_base_right[] = {km024, km022, COMBO_END};
-const uint16_t PROGMEM combo_cced_base_right[] = {km025, km024, COMBO_END};
-const uint16_t PROGMEM combo_ugrv_base_right[] = {km024, km021, COMBO_END};
-
-const uint16_t PROGMEM combo_deadcirc_base_right[] = {km004, km002, COMBO_END};
+// BASE LAYER - RIGHT SIDE
+const uint16_t PROGMEM combo_eacu_base_right[] = {km003, km004, COMBO_END};
+const uint16_t PROGMEM combo_egrv_base_right[] = {km002, km003, COMBO_END};
+const uint16_t PROGMEM combo_agrv_base_right[] = {km004, km002, COMBO_END};
+const uint16_t PROGMEM combo_cced_base_right[] = {km005, km004, COMBO_END};
+const uint16_t PROGMEM combo_ugrv_base_right[] = {km001, km004, COMBO_END};
+const uint16_t PROGMEM combo_deadcirc_base_right[] = {km024, km022, COMBO_END};
 const uint16_t PROGMEM combo_deadcirc_base_left[] = {k004, k002, COMBO_END};
-const uint16_t PROGMEM combo_deaddiae_base_right[] = {km005, km003, COMBO_END};
+const uint16_t PROGMEM combo_esc_base_right[] = {km022, km023, COMBO_END}; // 
+const uint16_t PROGMEM combo_switchhands_base_left[] = {k014, k015, COMBO_END};
+const uint16_t PROGMEM combo_ralt_osm_base_right[] = {km021, km024, COMBO_END};
+const uint16_t PROGMEM combo_app_base_right[] = {km021, km022, COMBO_END};
 
-// esc, bsp combos
-const uint16_t PROGMEM combo_esc_base_left[] = {k002, k003, COMBO_END}; // upper row base layer left esc
-const uint16_t PROGMEM combo_esc_base_right[] = {km002, km003, COMBO_END}; // 
-const uint16_t PROGMEM combo_esc_base_bis[] = {k022, k023, COMBO_END}; // alternate base layer left esc
+// BASE LAYER - LEFT SIDE
+const uint16_t PROGMEM combo_esc_base_left[] = {k002, k003, COMBO_END};
+const uint16_t PROGMEM combo_spc_base_left[] = {k001, k004, COMBO_END};
+const uint16_t PROGMEM combo_esc_base_bis[] = {k022, k023, COMBO_END};
+const uint16_t PROGMEM combo_play_base_left[] = {k023, k024, COMBO_END};
+const uint16_t PROGMEM combo_mouse1_base_left[] = {km005, km015, COMBO_END};
+
+// NUM LAYER
 const uint16_t PROGMEM combo_esc_num_left[] = {k222, k223, COMBO_END};
 const uint16_t PROGMEM combo_spc_num_left[] = {k202, k204, COMBO_END};
 const uint16_t PROGMEM combo_bsp_num_left[] = {k202, k203, COMBO_END};
 const uint16_t PROGMEM combo_del_num_left[] = {k204, k203, COMBO_END};
+
+// SYM LAYER
 const uint16_t PROGMEM combo_esc_sym_left[] = {k102, k104, COMBO_END};
 const uint16_t PROGMEM combo_bsp_sym_left[] = {k102, k103, COMBO_END};
 const uint16_t PROGMEM combo_esc_sym_right[] = {km102, km104, COMBO_END};
 const uint16_t PROGMEM combo_bsp_sym_right[] = {km102, km103, COMBO_END};
-const uint16_t PROGMEM combo_ent_base_right[] = {km003, km004, COMBO_END};
-const uint16_t PROGMEM combo_spc_base_left[] = {k001, k004, COMBO_END};
+// const uint16_t PROGMEM combo_ent_base_right[] = {km003, km004, COMBO_END};
 const uint16_t PROGMEM combo_switchhands_num_left[] = {k222, k224, COMBO_END};
-const uint16_t PROGMEM combo_ralt_osm_base_right[] = {km001, km004, COMBO_END};
 
-const uint16_t PROGMEM combo_app_base_right[] = {km001, km011, COMBO_END};
 
-const uint16_t PROGMEM combo_gui_sym_left[] = {k111, k112, COMBO_END};
-const uint16_t PROGMEM combo_gui_sym_right[] = {km111, km112, COMBO_END};
-const uint16_t PROGMEM combo_alt_sym_left[] = {k113, k114, COMBO_END};
-const uint16_t PROGMEM combo_alt_sym_right[] = {km113, km114, COMBO_END};
+const uint16_t PROGMEM combo_gui_sym_left[] =  { k121,  k122, COMBO_END};
+const uint16_t PROGMEM combo_ctl_sym_left[] =  { k122,  k123, COMBO_END};
+const uint16_t PROGMEM combo_alt_sym_left[] =  { k123,  k124, COMBO_END};
+const uint16_t PROGMEM combo_gui_sym_right[] = {km121, km122, COMBO_END};
+const uint16_t PROGMEM combo_ctl_sym_right[] = {km122, km123, COMBO_END};
+const uint16_t PROGMEM combo_alt_sym_right[] = {km123, km124, COMBO_END};
 
 
 // dummy combo to avoid the "repeating key" bug. set to unused keys to that effect
@@ -163,7 +152,6 @@ combo_t key_combos[MY_NB_COMBOS] = {
     // [CB_ESC_BASE_RIGHT] = COMBO(combo_esc_base_right, KC_ESC),
     [CB_DEADCIRC_BASE_RIGHT] = COMBO(combo_deadcirc_base_right, fCIRC),
     [CB_DEADCIRC_BASE_LEFT] = COMBO(combo_deadcirc_base_left, fCIRC),
-    [CB_DEADDIAE_BASE_RIGHT] = COMBO(combo_deaddiae_base_right, fDIAE),
 
     [CB_ESC_NUM_LEFT] = COMBO(combo_esc_num_left, KC_ESC),
     [CB_BSP_NUM_LEFT] = COMBO(combo_bsp_num_left, KC_BSPC),
@@ -172,44 +160,54 @@ combo_t key_combos[MY_NB_COMBOS] = {
     [CB_BSP_SYM_LEFT] = COMBO(combo_bsp_sym_left, KC_BSPC),
     [CB_ESC_SYM_RIGHT] = COMBO(combo_esc_sym_right, KC_ESC),
     [CB_BSP_SYM_RIGHT] = COMBO(combo_bsp_sym_right, KC_BSPC),
-    [CB_ENT_BASE_RIGHT] = COMBO(combo_ent_base_right, KC_ENT),
+    // [CB_ENT_BASE_RIGHT] = COMBO(combo_ent_base_right, KC_ENT),
     [CB_SPC_BASE_LEFT] = COMBO(combo_spc_base_left, KC_SPC),
     [CB_SPC_NUM_LEFT] = COMBO(combo_spc_num_left, KC_SPC),
     [CB_SWITCHHANDS_NUM_LEFT] = COMBO(combo_switchhands_num_left, OSL(8)),
+    [CB_SWITCHHANDS_BASE_LEFT] = COMBO(combo_switchhands_base_left, OSL(8)),
+    [CB_PLAY_BASE_LEFT] = COMBO(combo_play_base_left, KC_MPLY),
+
     [CB_RALT_OSM_BASE_RIGHT] = COMBO(combo_ralt_osm_base_right, OSM(MOD_RALT)),
     [CB_APP_BASE_RIGHT] = COMBO(combo_app_base_right, KC_APP),
+    [CB_MOUSE1_BASE_LEFT] = COMBO(combo_mouse1_base_left, KC_BTN1),
 
     [CB_GUI_SYM_LEFT] =  COMBO(combo_gui_sym_left,  KC_LGUI),
-    [CB_GUI_SYM_RIGHT] = COMBO(combo_gui_sym_right, KC_LGUI),
+    [CB_CTL_SYM_LEFT] =  COMBO(combo_ctl_sym_left,  KC_LCTL),
     [CB_ALT_SYM_LEFT] =  COMBO(combo_alt_sym_left,  KC_LALT),
+
+    [CB_GUI_SYM_RIGHT] = COMBO(combo_gui_sym_right, KC_RGUI),
+    [CB_CTL_SYM_RIGHT] =  COMBO(combo_ctl_sym_right,  KC_RCTL),
     [CB_ALT_SYM_RIGHT] = COMBO(combo_alt_sym_right, KC_LALT),
 
     [CB_DUMMY] = COMBO(combo_dummy, KC_ESC),
 };
 
+/*
 void process_combo_event(uint16_t combo_index, bool pressed) {
-    // switch(combo_index)
-    // {
-    //     case CB_ECIRC_SYM_LEFT:
-    //     case CB_ECIRC_SYM_RIGHT:
-    //         if (pressed) SEND_STRING(SS_TAP(X_DEADCIRC)"e");
-    //         break;
-    //     case CB_ACIRC_SYM_LEFT:
-    //     case CB_ACIRC_SYM_RIGHT:
-    //         if (pressed) SEND_STRING(SS_TAP(X_DEADCIRC)"q");
-    //         break;
-    //     case CB_OCIRC_SYM_LEFT:
-    //     case CB_OCIRC_SYM_RIGHT:
-    //         if (pressed) SEND_STRING(SS_TAP(X_DEADCIRC)"o");
-    //         break;
-    //     case CB_ICIRC_SYM_LEFT:
-    //     case CB_ICIRC_SYM_RIGHT:
-    //         if (pressed) SEND_STRING(SS_TAP(X_DEADCIRC)"i");
-    //         break;
-    //     case CB_UCIRC_SYM_LEFT:
-    //     case CB_UCIRC_SYM_RIGHT:
-    //         if (pressed) SEND_STRING(SS_TAP(X_DEADCIRC)"u");
-    //         break;
-    // }
+    switch(combo_index)
+    {
+        // case CB_ECIRC_SYM_LEFT:
+        // case CB_ECIRC_SYM_RIGHT:
+        case CB_ECIRC_BASE_LEFT:
+            if (pressed) SEND_STRING(SS_TAP(X_DEADCIRC)"e");
+            break;
+        // case CB_ACIRC_SYM_LEFT:
+        // case CB_ACIRC_SYM_RIGHT:
+        //     if (pressed) SEND_STRING(SS_TAP(X_DEADCIRC)"q");
+        //     break;
+        // case CB_OCIRC_SYM_LEFT:
+        // case CB_OCIRC_SYM_RIGHT:
+        //     if (pressed) SEND_STRING(SS_TAP(X_DEADCIRC)"o");
+        //     break;
+        // case CB_ICIRC_SYM_LEFT:
+        // case CB_ICIRC_SYM_RIGHT:
+        //     if (pressed) SEND_STRING(SS_TAP(X_DEADCIRC)"i");
+        //     break;
+        // case CB_UCIRC_SYM_LEFT:
+        // case CB_UCIRC_SYM_RIGHT:
+        //     if (pressed) SEND_STRING(SS_TAP(X_DEADCIRC)"u");
+        //     break;
+    }
 }
+*/
 

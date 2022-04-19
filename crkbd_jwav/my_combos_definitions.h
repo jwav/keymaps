@@ -1,4 +1,6 @@
 // NOTE: this file is unused for now. Caused problems during compiling, didn't seem worth it to try to solve them.
+// should be replaced by a "combos.h" python generator
+
 
 #pragma once
 
