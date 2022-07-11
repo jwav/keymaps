@@ -8,6 +8,9 @@
 #define LAYER_NUM 2
 #define LAYER_SYM 1
 
+// needed to allow combo-produced dead circumflex accent in AZERTY
+#define X_DEADCIRC X_LBRC
+
 // unused
 enum custom_keycodes {
     QMKBEST = SAFE_RANGE,
@@ -21,7 +24,6 @@ enum custom_keycodes {
     MC_DELEND
 };
 
-#define X_DEADCIRC X_LBRC
 
 // handle custom keycodes
 bool process_record_user(uint16_t keycode, keyrecord_t *record)
@@ -107,9 +109,13 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record)
             return TAPPING_TERM_HOMEROWMODS_NUMLAYER;
             break;
         case LT(2, KC_ENT):
+        case LT(2, KC_TAB):
         case LT(1,KC_SPC):
+        case LSFT_T(KC_TAB):
+        case LSFT_T(KC_ENT):
+        case RSFT_T(KC_BSPC):
             // return 150;
-            return TAPPING_TERM - 20;
+            return TAPPING_TERM_THUMBS;
             break;
         default:
             return TAPPING_TERM;
@@ -128,6 +134,7 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record)
 bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case LSFT_T(KC_TAB):
+        case LSFT_T(KC_ENT):
         case RSFT_T(KC_BSPC):
         case LT(2, KC_ENT):
         case LT(1,KC_SPC):
@@ -137,6 +144,7 @@ bool get_tapping_force_hold(uint16_t keycode, keyrecord_t *record) {
     }
 }
 
+// used when COMBO_TERM_PER_COMBO is defined
 uint16_t get_combo_term(uint16_t index, combo_t *combo) {
     // decide by combo->keycode
     // switch (combo->keycode) {
@@ -146,8 +154,19 @@ uint16_t get_combo_term(uint16_t index, combo_t *combo) {
 
     // or with combo index, i.e. its name from enum.
     switch (index) {
+        // 
         case CB_ESC_BASE_LEFT:
-            return MY_MEDIUM_COMBO_TERM;
+        case CB_ESC_BASE_RIGHT:
+            return MY_ESC_COMBO_TERM;
+        case CB_ENT_BASE_RIGHT:
+        case CB_ENT_BASE_RIGHT_BIS:
+            return MY_SHORT_COMBO_TERM;
+        case CB_EACU_BASE_RIGHT:
+        case CB_EGRV_BASE_RIGHT:
+        case CB_UGRV_BASE_RIGHT:
+        case CB_AGRV_BASE_RIGHT:
+        case CB_CCED_BASE_RIGHT:
+            return MY_SHORT_COMBO_TERM;
     }
 
     // And if you're feeling adventurous, you can even decide by the keys in the chord,

@@ -1,3 +1,7 @@
+#ifdef CONSOLE_ENABLE
+#include "print.h"
+#endif
+
 #include "my_homerow_mods.h"
 #include "my_custom_keycodes.h"
 #include "my_keymap.h"

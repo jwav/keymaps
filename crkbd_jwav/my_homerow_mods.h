@@ -12,6 +12,12 @@
 #define HOME_K LALT_T(FR_K)
 #define HOME_J LSFT_T(FR_J)
 
+#define HOME_Z LCTL_T(FR_Z)
+#define HOME_X LALT_T(FR_X)
+#define HOME_QUOT LALT_T(FR_QUOT)
+// #define HOME_SLSH LALT_T(FR_SLSH)
+#define HOME_SLSH FR_SLSH
+
 // homerow mods on the num layer
 #define HOME_NUM_0 LGUI_T(KC_P0)
 #define HOME_NUM_1 LCTL_T(KC_P1)

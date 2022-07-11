@@ -32,11 +32,16 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define USE_SERIAL_PD2
 
 // EVERYTHING TAPPING-RELATED
+// The tapping term defines for how long in milliseconds you need to hold a key before the tap becomes a hold.
 
 #define IGNORE_MOD_TAP_INTERRUPT
+
+// allows user to define differrent tapping terms for different keys
 #define TAPPING_TERM_PER_KEY
+
 #define TAPPING_TERM 200 // default QMK value: 200
-#define TAPPING_TERM_HOMEROWMODS 250 // original value :300
+#define TAPPING_TERM_THUMBS 180
+#define TAPPING_TERM_HOMEROWMODS 220 // original value :300
 #define TAPPING_TERM_HOMEROWMODS_NUMLAYER 350 // original value :300
 
 // if defined, TAPPING_FORCE_HOLD disables double-tap
@@ -67,8 +72,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MY_SHORT_COMBO_TERM 25
 #define MY_MEDIUM_COMBO_TERM 30
 #define MY_LONG_COMBO_TERM 40
+// a combo term just for the ESC combos
+#define MY_ESC_COMBO_TERM 25
 
-#define COMBO_TERM MY_SHORT_COMBO_TERM
+#define COMBO_TERM MY_MEDIUM_COMBO_TERM
 // allows per-combo term specification in my_custom_keycodes.h (TODO: make a specific "my_config.h", it's not just about custom keycodes anymore)
 #define COMBO_TERM_PER_COMBO
 // when using combo mods, enables the "keep combo pressed to keep mod pressed" behavior
