@@ -150,9 +150,13 @@ const uint16_t PROGMEM combo_ctlw_base_right[] =      {km022, km024, COMBO_END};
 const uint16_t PROGMEM combo_tab_base[] =      {km022, km023, COMBO_END};
 const uint16_t PROGMEM combo_sfttab_base[] =      {km023, km024, COMBO_END};
 const uint16_t PROGMEM combo_ent_base_right[] = {km020, km024, COMBO_END};
-const uint16_t PROGMEM combo_ent_base_right_bis[] = {km022, km024, COMBO_END};
+// const uint16_t PROGMEM combo_ent_base_right_bis[] = {km022, km024, COMBO_END};
+const uint16_t PROGMEM combo_ent_base_right_bis[] = {km003, km004, COMBO_END};
 
-const uint16_t PROGMEM combo_ctlbsp_base[] = {km003, km004, COMBO_END};
+
+// const uint16_t PROGMEM combo_ctlbsp_base[] = {km003, km004, COMBO_END};
+const uint16_t PROGMEM combo_ctlbsp_base[] = {km022, km024, COMBO_END};
+
 // BASE LAYER - LEFT SIDE
 const uint16_t PROGMEM combo_esc_base_left[] = {k002, k003, COMBO_END};
 const uint16_t PROGMEM combo_spc_base_left[] = {k001, k004, COMBO_END};

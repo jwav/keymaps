@@ -5,6 +5,7 @@ This script generates a my_combos.h file, from simple in-python combo definition
 
 from enum import Enum
 import traceback as tb
+# from typing import *
 
 
 
@@ -57,30 +58,23 @@ class Combo:
             action: 'fEACU' (for now, just the keycode)
             keys: 'km023 km024'
         """
-        self.name = name
-        self.action = action
-        self.action_type = action_type
+        self.name : str = name
+        self.action : str = action
+        # TODO: retire ActionType?
+        self.action_type : ActionType = action_type
         self.keys = keys.split(" ")
 
-    @property
-    def keycode(self):
-        if self.action_type == ActionType.KEYCODE:
-            return self.action
-        else:
-            return None
-    
-    def auto_enum_name(self, id=0, strip_id=False):
+    def auto_enum_name(self):
         """strip_id is only used for another parsing function to count occurences of the same comboname"""
         name = self.action.replace("KC_", "")
         name = "".join(c for c in name if c in UPPER_AZ)
         # return f"cb_{name}_{self.layer}"
-        if not strip_id:
-            return f"cb_{name}_{id}"
-        else:
-            return f"cb_{name}"
+        keycodes = [Keycode(s) for s in self.keys]
+        identifier = "".join(k.numbers_str for k in keycodes)
+        return f"cb_{name}_{identifier}"
 
 
-    def auto_progmem_name(self, id=0):
+    def auto_progmem_name(self):
         return self.auto_enum_name().upper()
 
 
@@ -112,15 +106,18 @@ class Combo:
 
 class ComboList(list):
 
-    def _how_many_prev_eq_names(combo_id:int):
-        counter = 0
-        for i in range(combo_id):
-            if self[i].auto_enum_name(strip_id=True) == self[combo_id].auto_enum_name(strip_id=True)
-:
-                counter += 1
-        return counter
+    # def _how_many_prev_eq_names(combo_id:int):
+    #     counter = 0
+    #     for i in range(combo_id):
+    #         if self[i].auto_enum_name(strip_id=True) == self[combo_id].auto_enum_name(strip_id=True)
+    # :
+    #             counter += 1
+    #     return counter
 
-    def _generate_autonames():
+    def generate_autonames(self):
+        for c in self:
+            if not c.name:
+                c.name = c.auto_progmem_name()
 
 
     def combos_file_str(self) -> str:
@@ -169,7 +166,7 @@ class ComboList(list):
                     )
         ret += "};\n"
         ret += "\n\n"
-        
+
         # NOTE: disabled for now, will reenable when combo actions go beyond simple keycodes
 
         # block: process_combo_event
@@ -198,20 +195,27 @@ def test():
     print(UPPER_AZ)
     print(Combo("cb_eacu_base_right", "fEACU", "km023 km024").auto_enum_name())
     print(Combo("cb_eacu_base_right", "fEACU", "km023 km024").auto_enum_name())
+    # python checker test
+    def foo(a:int):
+        print(a)
+    foo("123")
 
 
 if __name__ == "__main__":
-    test()
-    exit(0)
+    # test()
+    # exit(0)
 
     cblist = ComboList()
     cblist.extend([
-        Combo("cb_eacu_base_right", "fEACU", "km023 km024"),
-        Combo("cb_egrv_base_right", "fEGRV", "km022 km023"),
-        Combo("cb_agrv_base_right", "fAGRV", "km024 km022"),
-        Combo("cb_cced_base_right", "fCCED", "km025 km021"),
-        Combo("cb_ugrv_base_right", "fUGRV", "km022 km021"),
+        # Combo("cb_eacu_base_right", "fEACU", "km023 km024"),
+        # Combo("cb_egrv_base_right", "fEGRV", "km022 km023"),
+        # Combo("cb_agrv_base_right", "fAGRV", "km024 km022"),
+        # Combo("cb_cced_base_right", "fCCED", "km025 km021"),
+        # Combo("cb_ugrv_base_right", "fUGRV", "km022 km021"),
+
+        Combo("", "fUGRV", "km022 km021"),
         ])
+    cblist.generate_autonames()
     print(cblist.combos_file_str())
     cblist.write_combos_file(GENERATED_FILENAME)
 
