@@ -3,15 +3,31 @@
 This script generates a my_combos.h file, from simple in-python combo definitions
 """
 
+# PUT THE USER CONFIG STRING HERE
+
+# TODO: write and formalize:
+# - k/km standard : layer,row,col counted from the oustide
+# - r/l standar : layer,row,col counted from the inside
+
+
+GENERATED_FILENAME = "out_combos.h"
+CONFIG_STRING = """
+syntax: default
+é r011 r012
+"""
+
+# </USER CONFIG>
+
+
+
+# No more config, it's code all the way down
+
 from enum import Enum
 import traceback as tb
 # from typing import *
 
-
-
 UPPER_AZ = "".join(chr(x) for x in range(ord('A'), ord('Z')+1))
 LOWER_AZ = "".join(chr(x) for x in range(ord('a'), ord('z')+1))
-GENERATED_FILENAME = "out_combos.h"
 
 
 class ActionType(Enum):

@@ -81,16 +81,19 @@ uint16_t COMBO_LEN = MY_NB_COMBOS;
 
 // base layer, right side
 
-// const uint16_t PROGMEM combo_eacu_base_right[] = {km023, km022, COMBO_END};
-// const uint16_t PROGMEM combo_egrv_base_right[] = {km022, km021, COMBO_END};
-// const uint16_t PROGMEM combo_agrv_base_right[] = {km023, km021, COMBO_END};
-// const uint16_t PROGMEM combo_cced_base_right[] = {km023, km024, COMBO_END};
-// const uint16_t PROGMEM combo_ugrv_base_right[] = {km021, km020, COMBO_END};
-const uint16_t PROGMEM combo_eacu_base_right[] = {km013, km012, COMBO_END};
-const uint16_t PROGMEM combo_egrv_base_right[] = {km012, km011, COMBO_END};
-const uint16_t PROGMEM combo_agrv_base_right[] = {km013, km011, COMBO_END};
-const uint16_t PROGMEM combo_cced_base_right[] = {km013, km014, COMBO_END};
-const uint16_t PROGMEM combo_ugrv_base_right[] = {km011, km010, COMBO_END};
+// on bottom row
+const uint16_t PROGMEM combo_eacu_base_right[] = {km023, km022, COMBO_END};
+const uint16_t PROGMEM combo_egrv_base_right[] = {km022, km021, COMBO_END};
+const uint16_t PROGMEM combo_agrv_base_right[] = {km023, km021, COMBO_END};
+const uint16_t PROGMEM combo_cced_base_right[] = {km023, km024, COMBO_END};
+const uint16_t PROGMEM combo_ugrv_base_right[] = {km021, km020, COMBO_END};
+
+// on home row
+// const uint16_t PROGMEM combo_eacu_base_right[] = {km013, km012, COMBO_END};
+// const uint16_t PROGMEM combo_egrv_base_right[] = {km012, km011, COMBO_END};
+// const uint16_t PROGMEM combo_agrv_base_right[] = {km013, km011, COMBO_END};
+// const uint16_t PROGMEM combo_cced_base_right[] = {km013, km014, COMBO_END};
+// const uint16_t PROGMEM combo_ugrv_base_right[] = {km011, km010, COMBO_END};
 
 const uint16_t PROGMEM combo_deadcirc_base_right[] = {km003, km001, COMBO_END};
 

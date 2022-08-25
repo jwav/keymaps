@@ -10,6 +10,8 @@
 //TODO: sort these CB_* enums into something more orderly
 
 enum combo_events {
+    CB_LEADER_BASE,
+
     CB_EACU_BASE_RIGHT,
     CB_EGRV_BASE_RIGHT,
     CB_AGRV_BASE_RIGHT,
@@ -34,6 +36,7 @@ enum combo_events {
     CB_CTLW_BASE,
     CB_ALTTAB_BASE,
     CB_ALTSFTTAB_BASE,
+    CB_ALTTAB_BASE_BIS,
 
     CB_CTLTAB_BASE_RIGHT,
     CB_CTLSFTTAB_BASE_RIGHT,
@@ -45,6 +48,7 @@ enum combo_events {
 
     CB_ESC_NUM_LEFT,
     CB_BSP_NUM_LEFT,
+    CB_CTLBSP_NUM_LEFT,
     CB_DEL_NUM_LEFT,
     CB_COLON_NUM_LEFT,
     CB_LPRN_NUM_LEFT,
@@ -55,6 +59,7 @@ enum combo_events {
     CB_DOWN_NUM_LEFT,
     CB_UP_NUM_LEFT,
     CB_EQL_NUM_LEFT,
+    CB_COMMA_NUM_LEFT,
 
     CB_ESC_SYM_LEFT,
     CB_BSP_SYM_LEFT,
@@ -92,6 +97,7 @@ enum combo_events {
 
 uint16_t COMBO_LEN = MY_NB_COMBOS;
 
+const uint16_t PROGMEM combo_leader_base[] = {KC_E, KC_I, COMBO_END};
 // BASE LAYER - RIGHT SIDE
 const uint16_t PROGMEM combo_eacu_base_right[] = {km013, km014, COMBO_END};
 const uint16_t PROGMEM combo_egrv_base_right[] = {km012, km013, COMBO_END};
@@ -136,26 +142,29 @@ const uint16_t PROGMEM combo_mswhleft_base_right[] = {km005, km015, COMBO_END};
 const uint16_t PROGMEM combo_mswhright_base_right[] = {km002, km012, COMBO_END};
 
 
+
+
+const uint16_t PROGMEM combo_ctltab_base_right[] =    {KC_NO, KC_NO, COMBO_END};
+const uint16_t PROGMEM combo_ctlsfttab_base_right[] = {KC_NO, KC_NO, COMBO_END};
+const uint16_t PROGMEM combo_ctlw_base_right[] =      {KC_NO, KC_NO, COMBO_END};
+
+const uint16_t PROGMEM combo_tab_base[] =      {km020, km025, COMBO_END};
+const uint16_t PROGMEM combo_sfttab_base[] =      {km020, km024, COMBO_END};
+const uint16_t PROGMEM combo_ent_base_right[] = {km020, km024, COMBO_END};
+
+
 const uint16_t PROGMEM combo_ctltab_base[] =    {k023, k024, COMBO_END};
 const uint16_t PROGMEM combo_ctlsfttab_base[] = {k022, k023, COMBO_END};
 const uint16_t PROGMEM combo_ctlw_base[] = {k022, k024, COMBO_END};
-const uint16_t PROGMEM combo_alttab_base[] =    {k024, k025, COMBO_END};
-const uint16_t PROGMEM combo_altsfttab_base[] = {k021, k022, COMBO_END};
-
-
-const uint16_t PROGMEM combo_ctltab_base_right[] =    {km022, km023, COMBO_END};
-const uint16_t PROGMEM combo_ctlsfttab_base_right[] = {km023, km024, COMBO_END};
-const uint16_t PROGMEM combo_ctlw_base_right[] =      {km022, km024, COMBO_END};
-
-const uint16_t PROGMEM combo_tab_base[] =      {km022, km023, COMBO_END};
-const uint16_t PROGMEM combo_sfttab_base[] =      {km023, km024, COMBO_END};
-const uint16_t PROGMEM combo_ent_base_right[] = {km020, km024, COMBO_END};
+const uint16_t PROGMEM combo_alttab_base[] =    {km022, km023, COMBO_END};
+const uint16_t PROGMEM combo_altsfttab_base[] = {km023, km024, COMBO_END};
+const uint16_t PROGMEM combo_alttab_base_bis[] =    {k024, k025, COMBO_END};
 // const uint16_t PROGMEM combo_ent_base_right_bis[] = {km022, km024, COMBO_END};
 const uint16_t PROGMEM combo_ent_base_right_bis[] = {km003, km004, COMBO_END};
 
 
 // const uint16_t PROGMEM combo_ctlbsp_base[] = {km003, km004, COMBO_END};
-const uint16_t PROGMEM combo_ctlbsp_base[] = {km022, km024, COMBO_END};
+const uint16_t PROGMEM combo_ctlbsp_base[] = {k002, k003, k004, COMBO_END};
 
 // BASE LAYER - LEFT SIDE
 const uint16_t PROGMEM combo_esc_base_left[] = {k002, k003, COMBO_END};
@@ -169,6 +178,7 @@ const uint16_t PROGMEM combo_leftclick_base_left[] = {k004, k005, COMBO_END};
 const uint16_t PROGMEM combo_esc_num_left[] = {k222, k223, COMBO_END};
 const uint16_t PROGMEM combo_spc_num_left[] = {k212, k214, COMBO_END};
 const uint16_t PROGMEM combo_bsp_num_left[] = {k202, k203, COMBO_END};
+const uint16_t PROGMEM combo_ctlbsp_num_left[] = {k202, k203, k204, COMBO_END};
 const uint16_t PROGMEM combo_del_num_left[] = {k204, k203, COMBO_END};
 const uint16_t PROGMEM combo_colon_num_left[] = {k202, k204, COMBO_END};
 const uint16_t PROGMEM combo_lprn_num_left[] = {k212, k213, COMBO_END};
@@ -180,6 +190,7 @@ const uint16_t PROGMEM combo_df0_num_right[] = {km224, km225, COMBO_END};
 const uint16_t PROGMEM combo_down_num_left[] = {k213, k223, COMBO_END};
 const uint16_t PROGMEM combo_up_num_left[] =   {k203, k213, COMBO_END};
 const uint16_t PROGMEM combo_eql_num_left[] =   {k222, k224, COMBO_END};
+const uint16_t PROGMEM combo_comma_num_left[] =   {k211, k214, COMBO_END};
 
 // SYM LAYER
 const uint16_t PROGMEM combo_esc_sym_left[] = {k102, k104, COMBO_END};
@@ -225,6 +236,8 @@ combo_t key_combos[MY_NB_COMBOS] = {
     // [CB_ICIRC_SYM_RIGHT] = COMBO_ACTION(combo_icirc_sym_right),
     // [CB_UCIRC_SYM_RIGHT] = COMBO_ACTION(combo_ucirc_sym_right),
 
+    [CB_LEADER_BASE] = COMBO(combo_leader_base, KC_LEAD),
+
     [CB_EACU_BASE_RIGHT] = COMBO(combo_eacu_base_right, fEACU),
     [CB_EGRV_BASE_RIGHT] = COMBO(combo_egrv_base_right, fEGRV),
     [CB_AGRV_BASE_RIGHT] = COMBO(combo_agrv_base_right, fAGRV),
@@ -250,6 +263,7 @@ combo_t key_combos[MY_NB_COMBOS] = {
     [CB_CTLW_BASE] = COMBO(combo_ctlw_base, LCTL(FR_W)),
     [CB_ALTTAB_BASE] =    COMBO(combo_alttab_base, LALT(KC_TAB)),
     [CB_ALTSFTTAB_BASE] = COMBO(combo_altsfttab_base, LALT(LSFT(KC_TAB))),
+    [CB_ALTTAB_BASE_BIS] =    COMBO(combo_alttab_base_bis, LALT(KC_TAB)),
 
     [CB_CTLTAB_BASE_RIGHT] =    COMBO(combo_ctltab_base_right, LCTL(KC_TAB)),
     [CB_CTLSFTTAB_BASE_RIGHT] = COMBO(combo_ctlsfttab_base_right, LCTL(LSFT(KC_TAB))),
@@ -259,6 +273,7 @@ combo_t key_combos[MY_NB_COMBOS] = {
 
     [CB_ESC_NUM_LEFT] = COMBO(combo_esc_num_left, KC_ESC),
     [CB_BSP_NUM_LEFT] = COMBO(combo_bsp_num_left, KC_BSPC),
+    [CB_CTLBSP_NUM_LEFT] = COMBO(combo_ctlbsp_num_left, LCTL(KC_BSPC)),
     [CB_DEL_NUM_LEFT] = COMBO(combo_del_num_left, KC_DEL),
     [CB_COLON_NUM_LEFT] = COMBO(combo_colon_num_left, fCOLN),
     [CB_LPRN_NUM_LEFT] = COMBO(combo_lprn_num_left, fLPRN),
@@ -270,6 +285,7 @@ combo_t key_combos[MY_NB_COMBOS] = {
     [CB_DOWN_NUM_LEFT] = COMBO(combo_down_num_left, KC_DOWN),
     [CB_UP_NUM_LEFT] =   COMBO(combo_up_num_left, KC_UP),
     [CB_EQL_NUM_LEFT] =   COMBO(combo_eql_num_left, fEQL),
+    [CB_COMMA_NUM_LEFT] =   COMBO(combo_comma_num_left, fCOMM),
 
     [CB_ESC_SYM_LEFT] = COMBO(combo_esc_sym_left, KC_ESC),
     [CB_BSP_SYM_LEFT] = COMBO(combo_bsp_sym_left, KC_BSPC),

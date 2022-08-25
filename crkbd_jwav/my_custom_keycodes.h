@@ -4,6 +4,7 @@
 #include "my_french_keycode_aliases.h"
 #include "my_homerow_mods.h"
 #include "my_combos.h"
+#include "my_leader.h"
 
 #define LAYER_NUM 2
 #define LAYER_SYM 1

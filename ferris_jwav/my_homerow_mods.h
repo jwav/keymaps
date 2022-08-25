@@ -12,8 +12,12 @@
 #define HOME_K LALT_T(FR_K)
 #define HOME_J LSFT_T(FR_J)
 
-#define HOME_NUM_0 LGUI_T(KC_P0)
-#define HOME_NUM_1 LCTL_T(KC_P1)
-#define HOME_NUM_2 LALT_T(KC_P2)
-#define HOME_NUM_3 LSFT_T(KC_P3)
+// #define HOME_NUM_0 LGUI_T(KC_P0)
+// #define HOME_NUM_1 LCTL_T(KC_P1)
+// #define HOME_NUM_2 LALT_T(KC_P2)
+// #define HOME_NUM_3 LSFT_T(KC_P3)
 
+#define HOME_NUM_0 LGUI_T(KC_P0)
+#define HOME_NUM_1 LCTL_T(KC_P4)
+#define HOME_NUM_2 LALT_T(KC_P5)
+#define HOME_NUM_3 LSFT_T(KC_P6)
