@@ -185,40 +185,43 @@ UNPARSED_STRING = """
 #define fBULT  FR_CURR
 """
 
-keycode_to_char_dict = {}
-char_to_keycode_dict = {}
+verbose = False
+def debug_print(*args, **kwargs):
+    if verbose:
+        print(*args, **kwargs)
+
 
 def generate_dicts():
-    global keycode_to_char_dict
-    global char_to_keycode_dict
+    """Returns the following tuple: (keycode_to_char_dict, char_to_keycode_dict)"""
     keycode_to_char_dict = {}
     char_to_keycode_dict = {}
 
     for line in UNPARSED_STRING.split("\n"):
         try:
-            print(line)
+            debug_print(line)
             parts = [x.strip() for x in line.split(" ")]
-            # print( [x for x in line.split(" ")])
-            # print(f"{parts:}")
+            # debug_print( [x for x in line.split(" ")])
+            # debug_print(f"{parts:}")
             if len(parts) < 5:
                 continue
             keycode = parts[1]
             comment_pos = parts.index("//")
             character = parts[comment_pos + 1]
             keycode_to_char_dict[keycode] = character
-            print(keycode,character)
+            debug_print(keycode,character)
         except Exception as ex:
             print(ex)
             continue
 
-    char_to_keycode_dict = {v:k for k,v in zip(keycode_to_char_dict.keys(), keycode_to_char_dict.values())}
+    char_to_keycode_dict = {v:k for k,v in keycode_to_char_dict.items()}
+    return (keycode_to_char_dict, char_to_keycode_dict)
 
-char_to_keycode_dict = {v:k for k,v in zip(keycode_to_char_dict.keys(), keycode_to_char_dict.values())}
 
 if __name__ == "__main__":
     import yaml
-    generate_dicts()
-    print(yaml.dump(keycode_to_char_dict))
-    print(yaml.dump(char_to_keycode_dict))
+    k2c, c2k = generate_dicts()
+    print(yaml.dump(k2c))
+    print(yaml.dump(c2k))
+
 
 

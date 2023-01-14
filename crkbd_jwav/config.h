@@ -41,6 +41,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define TAPPING_TERM 200 // default QMK value: 200
 #define TAPPING_TERM_THUMBS 180
+#define TAPPING_TERM_THUMB_SHIFT  150
+
 #define TAPPING_TERM_HOMEROWMODS 220 // original value :300
 #define TAPPING_TERM_HOMEROWMODS_NUMLAYER 350 // original value :300
 
@@ -90,6 +92,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //     #define RGBLIGHT_SAT_STEP 17
 //     #define RGBLIGHT_VAL_STEP 17
 // #endif
-#define LEADER_TIMEOUT 1000
+#define LEADER_TIMEOUT 700
 
 // #define OLED_FONT_H "keyboards/crkbd/lib/glcdfont.c"
