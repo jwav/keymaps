@@ -12,6 +12,9 @@ enum combo_events {
     CB_LEADER_BASE_LEFT,
 
     CB_UNDS_BASE,
+    CB_DQUO_BASE,
+    CB_MINS_BASE,
+
     CB_EACU_BASE_RIGHT,
     CB_EGRV_BASE_RIGHT,
     CB_AGRV_BASE_RIGHT,
@@ -41,8 +44,8 @@ enum combo_events {
     CB_CTLSFTTAB_BASE_RIGHT,
     CB_CTLW_BASE_RIGHT,
 
-    CB_TAB_BASE,
-    CB_SFTTAB_BASE,
+    // CB_TAB_BASE,
+    // CB_SFTTAB_BASE,
 
     CB_ALTF4_BASE,
 
@@ -64,6 +67,7 @@ enum combo_events {
 
     CB_HOME_NUM,
     CB_END_NUM,
+    CB_TAB_NUM,
 
     CB_ESC_SYM_LEFT,
     CB_BSP_SYM_LEFT,
@@ -76,12 +80,19 @@ enum combo_events {
     CB_SWITCHNUM_NUM_LEFT,
     CB_SWITCHHANDS_BASE_LEFT,
     CB_SWITCHHANDS_BASE_RIGHT,
-    CB_PLAY_BASE_LEFT,
+
+    CB_PLAY_BASE,
+    CB_PLAY_BASE_BIS,
+    CB_MUTE_BASE,
+    CB_VOLD_BASE_LEFT,
+    CB_VOLU_BASE_LEFT,
+
+
     CB_RALT_OSM_BASE_RIGHT,
-    CB_MSWHUP_BASE_RIGHT,
-    CB_MSWHDOWN_BASE_RIGHT,
-    CB_MSWHLEFT_BASE_RIGHT,
-    CB_MSWHRIGHT_BASE_RIGHT,
+    CB_MSWHUP_SYM_RIGHT,
+    CB_MSWHDOWN_SYM_RIGHT,
+    CB_MSWHLEFT_SYM_RIGHT,
+    CB_MSWHRIGHT_SYM_RIGHT,
     CB_LEFTCLICK_BASE_LEFT, // supremely useful when using the touchpad with the right hand!
 
     CB_LBRC_SYM,
@@ -98,8 +109,8 @@ enum combo_events {
     CB_CTL_SYM_RIGHT,
     CB_ALT_SYM_RIGHT,
 
-    CB_VOLD_SYM_RIGHT,
-    CB_VOLU_SYM_RIGHT,
+    CB_VOLD_BASE_RIGHT,
+    CB_VOLU_BASE_RIGHT,
 
     CB_EURO_SYM,
     CB_EURO_NUM,
@@ -116,6 +127,8 @@ const uint16_t PROGMEM combo_leader_base_left[] = {k002, k004, COMBO_END};
 
 
 const uint16_t PROGMEM combo_unds_base[] = {km022, km023, COMBO_END};
+const uint16_t PROGMEM combo_dquo_base[] = {km022, km024, COMBO_END};
+const uint16_t PROGMEM combo_mins_base[] = {km023, km024, COMBO_END};
 // BASE LAYER - RIGHT SIDE
 
 
@@ -144,8 +157,9 @@ const uint16_t PROGMEM combo_deadcirc_base_right[] = {km004, km002, COMBO_END};
 
 
 
-const uint16_t PROGMEM combo_deadcirc_base_left[] = {k001, k004, COMBO_END};
-const uint16_t PROGMEM combo_esc_base_right[] = {KC_NO, KC_NO, COMBO_END}; // 
+// const uint16_t PROGMEM combo_deadcirc_base_left[] = {k001, k004, COMBO_END};
+const uint16_t PROGMEM combo_deadcirc_base_left[] = {KC_NO, KC_NO, COMBO_END};
+const uint16_t PROGMEM combo_esc_base_right[] = {km001, km002, COMBO_END}; // 
 
 // const uint16_t PROGMEM combo_switchhands_base_left[] = {k014, k015, COMBO_END};
 // const uint16_t PROGMEM combo_switchhands_base_left[] = {k014, k002, COMBO_END};
@@ -156,17 +170,17 @@ const uint16_t PROGMEM combo_switchhands_base_right[] = {km002, km014, COMBO_END
 const uint16_t PROGMEM combo_ralt_osm_base_right[] = {km021, km024, COMBO_END};
 const uint16_t PROGMEM combo_app_base_right[] = {km021, km011, COMBO_END};
 
-const uint16_t PROGMEM combo_mswhup_base_right[] = {km003, km013, COMBO_END};
-const uint16_t PROGMEM combo_mswhdown_base_right[] = {km004, km014, COMBO_END};
-const uint16_t PROGMEM combo_mswhleft_base_right[] = {km005, km015, COMBO_END};
-const uint16_t PROGMEM combo_mswhright_base_right[] = {km002, km012, COMBO_END};
+const uint16_t PROGMEM combo_mswhup_sym_right[] =    {km103, km113, COMBO_END};
+const uint16_t PROGMEM combo_mswhdown_sym_right[] =  {km104, km114, COMBO_END};
+const uint16_t PROGMEM combo_mswhleft_sym_right[] =  {km105, km115, COMBO_END};
+const uint16_t PROGMEM combo_mswhright_sym_right[] = {km102, km112, COMBO_END};
 
 const uint16_t PROGMEM combo_ctltab_base_right[] =    {KC_NO, KC_NO, COMBO_END};
 const uint16_t PROGMEM combo_ctlsfttab_base_right[] = {KC_NO, KC_NO, COMBO_END};
 const uint16_t PROGMEM combo_ctlw_base_right[] =      {KC_NO, KC_NO, COMBO_END};
 
-const uint16_t PROGMEM combo_tab_base[] =      {km020, km025, COMBO_END};
-const uint16_t PROGMEM combo_sfttab_base[] =      {km020, km024, COMBO_END};
+// const uint16_t PROGMEM combo_tab_base[] =      {km020, km025, COMBO_END};
+// const uint16_t PROGMEM combo_sfttab_base[] =      {km020, km024, COMBO_END};
 const uint16_t PROGMEM combo_ent_base_right[] = {km020, km024, COMBO_END};
 
 const uint16_t PROGMEM combo_altf4_base[] =      {k021, k024, COMBO_END};
@@ -190,8 +204,16 @@ const uint16_t PROGMEM combo_ctlbsp_base[] = {k002, k003, k004, COMBO_END};
 const uint16_t PROGMEM combo_esc_base_left[] = {k002, k003, COMBO_END};
 const uint16_t PROGMEM combo_spc_base_left[] = {k003, k004, COMBO_END};
 const uint16_t PROGMEM combo_esc_base_bis[] = {k022, k023, COMBO_END};
-const uint16_t PROGMEM combo_play_base_left[] = {k004, k014, COMBO_END};
 const uint16_t PROGMEM combo_leftclick_base_left[] = {k005, k015, COMBO_END};
+
+const uint16_t PROGMEM combo_play_base[] = {k003, k013, COMBO_END};
+const uint16_t PROGMEM combo_play_base_bis[] = {km003, km013, COMBO_END};
+const uint16_t PROGMEM combo_mute_base[] = {km001, km011, COMBO_END};
+const uint16_t PROGMEM combo_vold_base_left[] = {k002, k012, COMBO_END};
+const uint16_t PROGMEM combo_volu_base_left[] = {k004, k014, COMBO_END};
+
+const uint16_t PROGMEM combo_vold_base_right[] = {km004, km014, COMBO_END};
+const uint16_t PROGMEM combo_volu_base_right[] = {km002, km012, COMBO_END};
 
 // []
 const uint16_t PROGMEM  combo_lbrc_sym[] = { k114,  k113, COMBO_END};
@@ -226,6 +248,7 @@ const uint16_t PROGMEM combo_comma_num_left[] =   {k214, k215, COMBO_END};
 
 const uint16_t PROGMEM combo_home_num[] =   {k202, k212, COMBO_END};
 const uint16_t PROGMEM combo_end_num[] =    {k204, k214, COMBO_END};
+const uint16_t PROGMEM combo_tab_num[] =    {k224, k225, COMBO_END};
 
 
 // SYM LAYER
@@ -242,8 +265,6 @@ const uint16_t PROGMEM combo_gui_sym_right[] = {km121, km122, COMBO_END};
 const uint16_t PROGMEM combo_ctl_sym_right[] = {km122, km123, COMBO_END};
 const uint16_t PROGMEM combo_alt_sym_right[] = {km123, km124, COMBO_END};
 
-const uint16_t PROGMEM combo_vold_sym_right[] = {km103, km104, COMBO_END};
-const uint16_t PROGMEM combo_volu_sym_right[] = {km102, km103, COMBO_END};
 
 const uint16_t PROGMEM combo_euro_sym_right[] = {k103, k104, COMBO_END};
 const uint16_t PROGMEM combo_euro_num_right[] = {k204, k205, COMBO_END};
@@ -279,6 +300,8 @@ combo_t key_combos[MY_NB_COMBOS] = {
 
 
     [CB_UNDS_BASE] = COMBO(combo_unds_base, fUNDS),
+    [CB_DQUO_BASE] = COMBO(combo_dquo_base, fDQUO),
+    [CB_MINS_BASE] = COMBO(combo_mins_base, fMINS),
 
     [CB_EACU_BASE_RIGHT] = COMBO(combo_eacu_base_right, fEACU),
     [CB_EGRV_BASE_RIGHT] = COMBO(combo_egrv_base_right, fEGRV),
@@ -309,8 +332,8 @@ combo_t key_combos[MY_NB_COMBOS] = {
     [CB_CTLTAB_BASE_RIGHT] =    COMBO(combo_ctltab_base_right, LCTL(KC_TAB)),
     [CB_CTLSFTTAB_BASE_RIGHT] = COMBO(combo_ctlsfttab_base_right, LCTL(LSFT(KC_TAB))),
     [CB_CTLW_BASE_RIGHT] = COMBO(combo_ctlw_base_right, LCTL(FR_W)),
-    [CB_TAB_BASE] = COMBO(combo_tab_base, KC_TAB),
-    [CB_SFTTAB_BASE] = COMBO(combo_sfttab_base, LSFT(KC_TAB)),
+    // [CB_TAB_BASE] = COMBO(combo_tab_base, KC_TAB),
+    // [CB_SFTTAB_BASE] = COMBO(combo_sfttab_base, LSFT(KC_TAB)),
 
     [CB_ALTF4_BASE] = COMBO(combo_altf4_base, LALT(KC_F4)),
 
@@ -333,6 +356,7 @@ combo_t key_combos[MY_NB_COMBOS] = {
 
     [CB_HOME_NUM] =   COMBO(combo_home_num, KC_HOME),
     [CB_END_NUM] =    COMBO(combo_end_num, KC_END),
+    [CB_TAB_NUM] =    COMBO(combo_tab_num, KC_TAB),
 
     [CB_ESC_SYM_LEFT] = COMBO(combo_esc_sym_left, KC_ESC),
     [CB_BSP_SYM_LEFT] = COMBO(combo_bsp_sym_left, KC_BSPC),
@@ -349,7 +373,11 @@ combo_t key_combos[MY_NB_COMBOS] = {
     [CB_SWITCHNUM_NUM_LEFT] = COMBO(cb_switchnum_num_left, DF(7)),
     [CB_SWITCHHANDS_BASE_LEFT] = COMBO(combo_switchhands_base_left, OSL(8)),
     [CB_SWITCHHANDS_BASE_RIGHT] = COMBO(combo_switchhands_base_right, OSL(8)),
-    [CB_PLAY_BASE_LEFT] = COMBO(combo_play_base_left, KC_MPLY),
+    [CB_PLAY_BASE] = COMBO(combo_play_base, KC_MPLY),
+    [CB_PLAY_BASE_BIS] = COMBO(combo_play_base_bis, KC_MPLY),
+    [CB_MUTE_BASE] = COMBO(combo_mute_base, KC_MUTE),
+    [CB_VOLD_BASE_LEFT] = COMBO(combo_vold_base_left, KC_VOLD),
+    [CB_VOLU_BASE_LEFT] = COMBO(combo_volu_base_left, KC_VOLU),
 
 
     [CB_LBRC_SYM] = COMBO(combo_lbrc_sym        , fLBRC),
@@ -362,10 +390,11 @@ combo_t key_combos[MY_NB_COMBOS] = {
 
     [CB_RALT_OSM_BASE_RIGHT] = COMBO(combo_ralt_osm_base_right, OSM(MOD_RALT)),
 
-    [CB_MSWHUP_BASE_RIGHT] = COMBO(combo_mswhup_base_right, KC_MS_WH_UP),
-    [CB_MSWHDOWN_BASE_RIGHT] = COMBO(combo_mswhdown_base_right, KC_MS_WH_DOWN),
-    [CB_MSWHLEFT_BASE_RIGHT] = COMBO(combo_mswhleft_base_right, KC_MS_WH_LEFT),
-    [CB_MSWHRIGHT_BASE_RIGHT] = COMBO(combo_mswhright_base_right, KC_MS_WH_RIGHT),
+    [CB_MSWHUP_SYM_RIGHT] = COMBO(combo_mswhup_sym_right, KC_MS_WH_UP),
+    [CB_MSWHDOWN_SYM_RIGHT] = COMBO(combo_mswhdown_sym_right, KC_MS_WH_DOWN),
+    [CB_MSWHLEFT_SYM_RIGHT] = COMBO(combo_mswhleft_sym_right, KC_MS_WH_LEFT),
+    [CB_MSWHRIGHT_SYM_RIGHT] = COMBO(combo_mswhright_sym_right, KC_MS_WH_RIGHT),
+
     [CB_LEFTCLICK_BASE_LEFT] = COMBO(combo_leftclick_base_left, KC_MS_BTN1),
     
     // "left click" key is called KC_APP
@@ -380,8 +409,8 @@ combo_t key_combos[MY_NB_COMBOS] = {
     [CB_ALT_SYM_RIGHT] = COMBO(combo_alt_sym_right, KC_LALT),
 
 
-    [CB_VOLD_SYM_RIGHT] = COMBO(combo_vold_sym_right, KC_VOLD),
-    [CB_VOLU_SYM_RIGHT] = COMBO(combo_volu_sym_right, KC_VOLU),
+    [CB_VOLD_BASE_RIGHT] = COMBO(combo_vold_base_right, KC_VOLD),
+    [CB_VOLU_BASE_RIGHT] = COMBO(combo_volu_base_right, KC_VOLU),
 
     [CB_EURO_SYM] = COMBO(combo_euro_sym_right, fEURO),
     [CB_EURO_NUM] = COMBO(combo_euro_num_right, fEURO),

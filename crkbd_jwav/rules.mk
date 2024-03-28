@@ -15,12 +15,14 @@ NKRO_ENABLE = no            # Nkey Rollover - if this doesn't work, see here: ht
 BACKLIGHT_ENABLE = no       # Enable keyboard backlight functionality
 MIDI_ENABLE = no            # MIDI controls
 AUDIO_ENABLE = no           # Audio output on port C6
-UNICODE_ENABLE = yes         # Unicode
+UNICODE_ENABLE = no         # Unicode
 BLUETOOTH_ENABLE = no       # Enable Bluetooth with the Adafruit EZ-Key HID
 RGBLIGHT_ENABLE = no       # Enable WS2812 RGB underlight. 
-SWAP_HANDS_ENABLE = no      # Enable one-hand typing
+SWAP_HANDS_ENABLE = yes      # Enable one-hand typing
 OLED_DRIVER_ENABLE= no     # OLED display
 COMBO_ENABLE = yes 
 LEADER_ENABLE = yes
 # TAP_DANCE_ENABLE = yes
 # BOOTLOADER = caterina # set BLUETOOTH to caterina when compiling for the Pro Micro
+LTO_ENABLE = yes # Enable Link Time Optimization if the firmware size gets too big
+

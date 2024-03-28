@@ -101,12 +101,28 @@ uint16_t get_tapping_term(uint16_t keycode, keyrecord_t *record)
         case HOME_L:
         case HOME_K:
         case HOME_J:
+        case HOME_Q:
+        case HOME_W:
+        case HOME_G:
+        case HOME_O:
+        case HOME_P:
             return TAPPING_TERM_HOMEROWMODS;
             break;
         case HOME_NUM_0:
         case HOME_NUM_1:
         case HOME_NUM_2:
         case HOME_NUM_3:
+        case HOME_NUM_4:
+        case HOME_NUM_5:
+        case HOME_NUM_6:
+        case HOME_NUM_7:
+        case HOME_NUM_8:
+        case HOME_NUM_9:
+        case HOME_NUM_MULT:
+        case HOME_NUM_DIV:
+        case HOME_NUM_PLUS:
+        case HOME_NUM_MINUS:
+        case HOME_NUM_DOT:
             return TAPPING_TERM_HOMEROWMODS_NUMLAYER;
             break;
         case LT(2, KC_ENT):

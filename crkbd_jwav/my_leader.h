@@ -99,10 +99,29 @@ void matrix_scan_user(void)
             SEND_STRING(SS_TAP(X_9));
             SEND_STRING(SS_TAP(X_CAPS));
         }
-        // SEQ_ONE_KEY(fQ)
-        // {
-        //     SEND_STRING(SS_LALT(SS_TAP(X_F4)));
-        // }
+        // save current selection in ctrl group 0,
+        // queue one villager,
+        // then go back to the selection
+        SEQ_ONE_KEY(fQ)
+        {
+            SEND_STRING(SS_LCTL(SS_TAP(X_P0)));
+            SEND_STRING(SS_DELAY(20));
+            SEND_STRING(SS_TAP(X_H));
+            SEND_STRING(SS_DELAY(20));
+            SEND_STRING(SS_TAP(X_A));
+            SEND_STRING(SS_DELAY(20));
+            SEND_STRING(SS_LALT(SS_TAP(X_P0)));
+        }
+        SEQ_ONE_KEY(fA)
+        {
+            SEND_STRING(SS_LCTL(SS_TAP(X_P0)));
+            SEND_STRING(SS_DELAY(20));
+            SEND_STRING(SS_TAP(X_H));
+            SEND_STRING(SS_DELAY(20));
+            SEND_STRING(SS_LSFT(SS_TAP(X_A)));
+            SEND_STRING(SS_DELAY(20));
+            SEND_STRING(SS_LALT(SS_TAP(X_P0)));
+        }
         SEQ_ONE_KEY(fU)
         {
             SEND_STRING(SS_LCTL("w")); // "w" is azerty for "z"
@@ -158,12 +177,18 @@ void matrix_scan_user(void)
         {
             my_select_whole_line();
             SEND_STRING(SS_LCTL("c"));
-            SEND_STRING(SS_TAP(X_LEFT));
+            SEND_STRING(SS_TAP(X_RIGHT));
         }
         SEQ_TWO_KEYS(fY, fW) 
         {
             my_select_word();
             SEND_STRING(SS_LCTL("c"));
+            SEND_STRING(SS_TAP(X_LEFT));
+        }
+        SEQ_TWO_KEYS(fC, fW) 
+        {
+            my_select_word();
+            SEND_STRING(SS_LCTL("x"));
             SEND_STRING(SS_TAP(X_LEFT));
         }
         SEQ_TWO_KEYS(fD, fD) 
@@ -192,6 +217,11 @@ void matrix_scan_user(void)
             my_select_whole_line();
             SEND_STRING(SS_LCTL("x"));
             SEND_STRING(SS_TAP(X_DEL));
+        }
+        SEQ_TWO_KEYS(fC, fZ) 
+        {
+            my_select_text_till_end();
+            SEND_STRING(SS_LCTL("x"));
         }
         SEQ_TWO_KEYS(fC, fA) 
         {
